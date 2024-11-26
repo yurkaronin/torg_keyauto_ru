@@ -1,0 +1,43 @@
+// Базовые правила оформления
+@import "./components/base/root";
+@import "./components/base/fonts";
+@import "./components/base/normalize";
+@import "./components/base/global";
+@import "./components/base/support";
+
+// Эффекты
+
+
+// Блоки - самые простые компоненты
+@import "./components/blocks/wrapper";
+@import "./components/blocks/title";
+@import "./components/blocks/button";
+@import "./components/blocks/section";
+
+// Группы - сочетание двух и более блоков
+@import "./components/groups/title-group";
+
+// sections
+@import "./components/sections/header";
+@import "./components/sections/footer";
+
+
+@media (max-width: 1504px) {}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1379px) {}
+
+@media (max-width: 1279px) {}
+
+@media (max-width: 1023px) {}
+
+@media (max-width: 950px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 450px) {}
+
+@media (max-width: 374px) {}
