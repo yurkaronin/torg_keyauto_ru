@@ -7,9 +7,12 @@
 
 // Блоки - самые простые компоненты
 @import "./components/blocks/wrapper";
+@import "./components/blocks/container";
 @import "./components/blocks/title";
 @import "./components/blocks/button";
 @import "./components/blocks/section";
+@import "./components/blocks/main";
+@import "./components/blocks/lead";
 
 // Группы - сочетание двух и более блоков
 @import "./components/groups/title-group";

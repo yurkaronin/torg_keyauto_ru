@@ -1,3 +1,8 @@
 .inner-page {
-  background: var(--graphite);
+  background-color: var(--graphite);
+  background-image: url(../img/background-decorate.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 0;
 }

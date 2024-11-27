@@ -27,9 +27,8 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   color: var(--dark-grey-medium);
-
 }
 
 img {
@@ -41,7 +40,6 @@ img {
 figure {
   margin-inline: 0;
 }
-
 
 input,
 textarea,
@@ -79,6 +77,46 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+h3:not(class) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--graphite);
+}
+
+h3:not(class) + ul:not(class) {
+  margin-top: 0;
+}
+
+h3:not(class) + p:not(class) {
+  margin-top: 0;
+}
+
+ul:not(class) {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding-left: calc(16px + 10px);
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: var(--anthracite-red);
+      position: absolute;
+      top: 15px;
+      left: 0;
+    }
+  }
 }
 
 // Запрещаем изменение размеров текстового поля
