@@ -683,4 +683,8 @@ input[type=radio].visually-hidden {
 .section {
   padding-top: 37px;
   padding-bottom: 48px;
+}
+
+.inner-page {
+  background: var(--graphite);
 }/*# sourceMappingURL=style.css.map */
