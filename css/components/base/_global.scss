@@ -79,7 +79,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-h3:not(class) {
+h3:not([class]) {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -88,15 +88,15 @@ h3:not(class) {
   color: var(--graphite);
 }
 
-h3:not(class) + ul:not(class) {
+h3:not([class]) + ul:not([class]) {
   margin-top: 0;
 }
 
-h3:not(class) + p:not(class) {
+h3:not([class]) + p:not([class]) {
   margin-top: 0;
 }
 
-ul:not(class) {
+ul:not([class]) {
   list-style: none;
   padding: 0;
 

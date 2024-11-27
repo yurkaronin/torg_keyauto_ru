@@ -1,0 +1,21 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 35px;
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr;
+    padding-inline: 56px;
+
+
+    .header-desktop-navigation {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__grid {
+      padding-inline: 0;
+    }
+  }
+}

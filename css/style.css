@@ -395,7 +395,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-h3:not(class) {
+h3:not([class]) {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -404,25 +404,25 @@ h3:not(class) {
   color: var(--graphite);
 }
 
-h3:not(class) + ul:not(class) {
+h3:not([class]) + ul:not([class]) {
   margin-top: 0;
 }
 
-h3:not(class) + p:not(class) {
+h3:not([class]) + p:not([class]) {
   margin-top: 0;
 }
 
-ul:not(class) {
+ul:not([class]) {
   list-style: none;
   padding: 0;
 }
-ul:not(class) li {
+ul:not([class]) li {
   padding-left: 26px;
   position: relative;
   padding-top: 6px;
   padding-bottom: 6px;
 }
-ul:not(class) li::before {
+ul:not([class]) li::before {
   content: "";
   display: block;
   width: 16px;
@@ -746,6 +746,83 @@ input[type=radio].visually-hidden {
   color: var(--graphite);
 }
 
+.header-logo {
+  max-width: 323px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-logo__link {
+  display: block;
+}
+.header-logo__link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header-desktop-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, auto);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.header-desktop-navigation__link {
+  display: block;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.header-desktop-navigation__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.header-desktop-navigation__icon img {
+  display: block;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+.header__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: auto 1fr;
+  padding-inline: 56px;
+}
+.header__grid .header-desktop-navigation {
+  margin-left: auto;
+}
+@media (max-width: 1440px) {
+  .header__grid {
+    padding-inline: 0;
+  }
+}
+
 .inner-page {
   background-color: var(--graphite);
   background-image: url(../img/background-decorate.svg);
@@ -753,4 +830,7 @@ input[type=radio].visually-hidden {
   background-size: cover;
   background-position-x: center;
   background-position-y: 0;
+}
+.inner-page__content {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
