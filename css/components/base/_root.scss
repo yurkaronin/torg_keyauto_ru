@@ -3,7 +3,11 @@
   --second-family: "TT Firs Neue", sans-serif;
 
 	--graphite: #212322;
+
 	--white: #fff;
+  --white-07: rgba(255, 255, 255, 0.7);
+
+
 	--black: #000;
 	--dark-grey-medium: #4d4d4f;
 	--grey: #6d6e71;
@@ -16,4 +20,23 @@
 	--dark-blue: #003e51;
 	--purplish-blue: #595478;
 	--red: #a50034;
+
+
+  --inner-padding: 57px;
+  --max-width: 1088px;
+  --gap: 48px;
+
+  @media (max-width: 1152px) {
+    --inner-padding: 25px;
+    --max-width: 100%;
+
+  }
+
+  @media (max-width: 1023px) {
+    --gap: 32px;
+  }
+
+  @media (max-width: 767px) {
+    --gap: 24px;
+  }
 }

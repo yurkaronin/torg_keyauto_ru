@@ -1,0 +1,25 @@
+.mobile-nav-open {
+  overflow: hidden;
+  .mobile-nav {
+    top: 0;
+    visibility: initial;
+    opacity: initial;
+    pointer-events: initial;
+  }
+
+  .menu-button span {
+    background-color: transparent;
+  }
+
+  .menu-button span:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-button span:before {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-nav {
+    right: 0;
+  }
+}

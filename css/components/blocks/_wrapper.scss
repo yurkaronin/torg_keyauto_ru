@@ -1,15 +1,6 @@
 .wrapper {
-  max-width: calc(1088px + (32px * 2));
-  width: 100%;
   margin-inline: auto;
-  padding-inline: 32px;
+  width: 100%;
+  padding-inline: var(--inner-padding);
 
-  @media (max-width: 1152px) {
-    max-width: 100%;
-
-  }
-
-  @media (max-width: 767px) {
-    padding-inline: 25px;
-  }
 }

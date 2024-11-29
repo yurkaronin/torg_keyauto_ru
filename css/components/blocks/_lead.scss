@@ -4,4 +4,8 @@
   font-size: 24px;
   line-height: 133%;
   color: var(--graphite);
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }

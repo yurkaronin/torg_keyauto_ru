@@ -1,11 +1,13 @@
 .header {
   padding-top: 32px;
   padding-bottom: 35px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
   &__grid {
     display: grid;
     gap: 32px;
     grid-template-columns: auto 1fr;
-    padding-inline: 56px;
 
 
     .header-desktop-navigation {
@@ -13,9 +15,21 @@
     }
   }
 
-  @media (max-width: 1440px) {
-    &__grid {
-      padding-inline: 0;
+  .menu-button {
+    display: none;
+  }
+
+  @media (max-width:767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .menu-button {
+      display: flex;
+      margin-left: auto;
+    }
+    .header-desktop-navigation {
+      display: none;
     }
   }
+
+
 }

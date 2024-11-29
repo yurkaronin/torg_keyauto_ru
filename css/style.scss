@@ -7,7 +7,7 @@
 
 // Блоки - самые простые компоненты
 @import "./components/blocks/wrapper";
-@import "./components/blocks/container";
+@import "./components/blocks/inner-content";
 @import "./components/blocks/title";
 @import "./components/blocks/button";
 @import "./components/blocks/section";
@@ -15,6 +15,9 @@
 @import "./components/blocks/lead";
 @import "./components/blocks/header-logo";
 @import "./components/blocks/header-desktop-navigation";
+@import "./components/blocks/footer-navigation";
+@import "./components/blocks/full-width";
+@import "./components/blocks/menu-button";
 
 
 // Группы - сочетание двух и более блоков
@@ -26,6 +29,9 @@
 
 // Шаблоны страниц
 @import "./components/templates/inner-page";
+
+// Интерактив
+@import "./components/activity/mobile-nav-open";
 
 @media (max-width: 1504px) {}
 
