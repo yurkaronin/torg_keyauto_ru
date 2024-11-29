@@ -1,5 +1,12 @@
 .mobile-nav-open {
   overflow: hidden;
+  .header {
+    background-color: var(--graphite);
+  }
+
+  .header::after {
+    opacity: 1;
+  }
   .mobile-nav {
     top: 0;
     visibility: initial;

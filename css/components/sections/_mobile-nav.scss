@@ -1,0 +1,87 @@
+.mobile-nav {
+  background-color: var(--graphite);
+  color: var(--white);
+  padding-top: var(--header-height);
+  padding-bottom: 45px;
+  height: calc(100vh + 2px);
+  overflow-y: auto;
+  position: fixed;
+  top: -100vw;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--white);
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: auto 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: var(--inner-padding);
+    position: relative;
+    align-items: center;
+    transition: all 0.3s;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-color: var(--red);
+      transition: all 0.3s;
+      opacity: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background-color: var(--white-02);
+      transition: all 0.3s;
+      opacity: 1;
+    }
+    &:hover {
+      background-color: var(--red);
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__link:hover &__icon,
+  &__link:active &__icon,
+  &__link:focus &__icon {
+    /* При наведении меняем цвета */
+     svg path {
+      stroke: #212322; /* Новый цвет для белых частей */
+    }
+
+    svg path[stroke="#A50034"] {
+      stroke: white; /* Новый цвет для фиолетовых частей */
+    }
+  }
+}

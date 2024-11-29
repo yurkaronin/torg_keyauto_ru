@@ -4,14 +4,33 @@
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
+
+  position: relative;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--white-02);
+    transition: all 0.3s;
+    opacity: 0;
+  }
   &__grid {
     display: grid;
     gap: 32px;
     grid-template-columns: auto 1fr;
 
-
     .header-desktop-navigation {
       margin-left: auto;
+      max-width: max-content;
     }
   }
 
@@ -19,7 +38,7 @@
     display: none;
   }
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 10px;
     .menu-button {
@@ -30,6 +49,4 @@
       display: none;
     }
   }
-
-
 }

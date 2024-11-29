@@ -4,7 +4,7 @@ let ticking = false;
 function headerChange() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > 98) {
+  if (scrollTop > 140) {
     document.body.classList.add("header-sticky");
   } else {
     document.body.classList.remove("header-sticky");

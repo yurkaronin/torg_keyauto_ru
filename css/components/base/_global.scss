@@ -125,9 +125,9 @@ textarea {
 }
 
 // Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-svg * {
-  transition-property: fill, stroke;
-}
+// svg * {
+//   transition-property: fill, stroke;
+// }
 
 // отключаем ненужные элементы навигации на яндекс картах
 [class*="copyrights-pane"] {

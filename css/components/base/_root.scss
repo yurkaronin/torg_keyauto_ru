@@ -6,6 +6,7 @@
 
 	--white: #fff;
   --white-07: rgba(255, 255, 255, 0.7);
+  --white-02: rgba(255, 255, 255, 0.2);
 
 
 	--black: #000;
@@ -26,6 +27,8 @@
   --max-width: 1088px;
   --gap: 48px;
 
+  --header-height: 138px;
+
   @media (max-width: 1152px) {
     --inner-padding: 25px;
     --max-width: 100%;
@@ -34,9 +37,11 @@
 
   @media (max-width: 1023px) {
     --gap: 32px;
+    --header-height: 124px;
   }
 
   @media (max-width: 767px) {
     --gap: 24px;
+    --header-height: 60px;
   }
 }
