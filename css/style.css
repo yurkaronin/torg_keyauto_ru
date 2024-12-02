@@ -1074,7 +1074,6 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   color: var(--white);
   display: grid;
-  gap: var(--gap);
   grid-template-columns: auto 1fr;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1114,23 +1113,80 @@ input[type=radio].visually-hidden {
   transition: all 0.3s;
   opacity: 1;
 }
-.mobile-nav__link:hover {
+.mobile-nav__link:hover, .mobile-nav__link:active, .mobile-nav__link:focus {
+  outline: none;
   background-color: var(--red);
 }
-.mobile-nav__link:hover::before {
+.mobile-nav__link:hover::before, .mobile-nav__link:active::before, .mobile-nav__link:focus::before {
   opacity: 1;
 }
-.mobile-nav__link:hover::after {
+.mobile-nav__link:hover::after, .mobile-nav__link:active::after, .mobile-nav__link:focus::after {
   opacity: 0;
 }
-.mobile-nav__link:hover .mobile-nav__icon, .mobile-nav__link:active .mobile-nav__icon, .mobile-nav__link:focus .mobile-nav__icon {
+.mobile-nav__link:hover, .mobile-nav__link:active, .mobile-nav__link:focus {
   /* При наведении меняем цвета */
 }
-.mobile-nav__link:hover .mobile-nav__icon svg path, .mobile-nav__link:active .mobile-nav__icon svg path, .mobile-nav__link:focus .mobile-nav__icon svg path {
+.mobile-nav__link:hover .icon--sale, .mobile-nav__link:active .icon--sale, .mobile-nav__link:focus .icon--sale {
+  background-image: url(../img/mobile-nav/1-active.svg);
+}
+.mobile-nav__link:hover .icon--user, .mobile-nav__link:active .icon--user, .mobile-nav__link:focus .icon--user {
+  background-image: url(../img/mobile-nav/2-active.svg);
+}
+.mobile-nav__link:hover .icon--gear, .mobile-nav__link:active .icon--gear, .mobile-nav__link:focus .icon--gear {
+  background-image: url(../img/mobile-nav/3-active.svg);
+}
+.mobile-nav__link:hover .icon--inform, .mobile-nav__link:active .icon--inform, .mobile-nav__link:focus .icon--inform {
+  background-image: url(../img/mobile-nav/4-active.svg);
+}
+.mobile-nav__link:hover .icon--support, .mobile-nav__link:active .icon--support, .mobile-nav__link:focus .icon--support {
+  background-image: url(../img/mobile-nav/5-active.svg);
+}
+.mobile-nav__link:hover .icon--exit, .mobile-nav__link:active .icon--exit, .mobile-nav__link:focus .icon--exit {
+  background-image: url(../img/mobile-nav/6-active.svg);
+}
+.mobile-nav__link:hover svg path, .mobile-nav__link:active svg path, .mobile-nav__link:focus svg path {
   stroke: #212322; /* Новый цвет для белых частей */
 }
-.mobile-nav__link:hover .mobile-nav__icon svg path[stroke="#A50034"], .mobile-nav__link:active .mobile-nav__icon svg path[stroke="#A50034"], .mobile-nav__link:focus .mobile-nav__icon svg path[stroke="#A50034"] {
+.mobile-nav__link:hover svg path[stroke="#A50034"], .mobile-nav__link:active svg path[stroke="#A50034"], .mobile-nav__link:focus svg path[stroke="#A50034"] {
   stroke: white; /* Новый цвет для фиолетовых частей */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/mobile-nav/1.svg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.icon--sale {
+  background-image: url(../img/mobile-nav/1.svg);
+}
+.icon--user {
+  background-image: url(../img/mobile-nav/2.svg);
+}
+.icon--support {
+  background-image: url(../img/mobile-nav/3.svg);
+}
+.icon--inform {
+  background-image: url(../img/mobile-nav/4.svg);
+}
+.icon--support {
+  background-image: url(../img/mobile-nav/5.svg);
+}
+.icon--exit {
+  background-image: url(../img/mobile-nav/6.svg);
 }
 
 .inner-page {
