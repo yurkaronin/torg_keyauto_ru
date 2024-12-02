@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cписок лотов</title>
+  <title>Список лотов</title>
 
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="date=no">
@@ -12,8 +12,8 @@
   <meta name="format-detection" content="email=no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
   <!-- Стили  -->
   <link rel="stylesheet" href="./libs/simplebar.css" />
@@ -21,31 +21,490 @@
 
   <link rel="stylesheet" href="./css/style.css?v=1">
 
+
 </head>
 
-<body class="body">
+<body class="body inner-page">
+
   <!-- шапка  -->
   <header class="header">
+    <div class="wrapper">
+      <div class="header__grid">
+        <!-- Логотип  -->
+        <div class="header__col header-logo">
+          <a href="./index.html" class="header-logo__link">
+            <img src="./img/logo.svg" alt="#" loading="lazy">
+          </a>
+        </div>
 
+        <!-- Навигация  -->
+        <div class="header__col">
+          <nav class="header-desktop-navigation">
+            <ul class="header-desktop-navigation__list">
+              <!-- Торги  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/1.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Торги</span>
+                </a>
+              </li>
+              <!-- Личный кабинет  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/2.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Личный кабинет</span>
+                </a>
+              </li>
+              <!-- Выход  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/3.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Выход</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Кнопка показа мобильного меню  -->
+          <button class="menu-button js-menu-button-mobile" title="Открыть мобильное меню" type="button">
+            <span class="menu-button__border"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
   </header>
 
+  <!-- Мобильное меню  -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <!-- Торги  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--sale"></span>
+          <span class="mobile-nav__item-name">Торги</span>
+        </a>
+      </li>
+      <!-- Личный кабинет  -->
+      <li class="mobile-nav__item">
+
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--user"></span>
+          <span class="mobile-nav__item-name">Личный кабинет</span>
+        </a>
+      </li>
+      <!-- Админка аукциона  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--gear"></span>
+          <span class="mobile-nav__item-name">Админка аукциона</span>
+        </a>
+      </li>
+      <!-- Как это работает?  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--inform"></span>
+          <span class="mobile-nav__item-name">Как это работает?</span>
+        </a>
+      </li>
+      <!-- Техподдержка  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--support"></span>
+          <span class="mobile-nav__item-name">Техподдержка</span>
+        </a>
+      </li>
+      <!-- Выход  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--exit"></span>
+          <span class="mobile-nav__item-name">Выход</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- основной контент  -->
   <main class="main">
-    <section class="section">
+
+    <!-- Витрина  -->
+    <section class="section showcase inner-content">
       <div class="wrapper">
+        <!-- Шапка витрины  -->
+        <div class="showcase__head">
+          <h2 class="title"><span>Торги</span></h2>
+          <div class="showcase__head-grid">
+            <div class="showcase__head-col">
+              <div class="countdown">
+                <div class="countdown__grid">
+                  <span class="countdown__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 34">
+                      <mask id="a" fill="#fff">
+                        <path d="m0 17.895 3.556-3.58 3.555 3.58" />
+                      </mask>
+                      <path fill="#fff"
+                        d="m3.556 14.316 1.418-1.41-1.418-1.428-1.42 1.428 1.42 1.41Zm-2.137 4.988 3.555-3.578-2.837-2.82-3.556 3.58 2.838 2.818Zm.718-3.578 3.555 3.578 2.838-2.819-3.556-3.579-2.837 2.82Z"
+                        mask="url(#a)" />
+                      <mask id="b" fill="#fff">
+                        <path d="M3.97 11.632C6.203 4.874 12.536 0 20 0c9.327 0 16.889 7.612 16.889 17" />
+                      </mask>
+                      <path fill="#fff"
+                        d="M5.869 12.26C7.84 6.288 13.432 2 19.999 2v-4C11.641-2 4.564 3.458 2.071 11.004l3.798 1.255ZM19.999 2c8.21 0 14.89 6.704 14.89 15h4c0-10.48-8.446-19-18.89-19v4Z"
+                        mask="url(#b)" />
+                      <mask id="c" fill="#fff">
+                        <path d="M36.03 22.368C33.795 29.126 27.462 34 20 34c-9.328 0-16.89-7.612-16.89-17v-1.79" />
+                      </mask>
+                      <path fill="#fff"
+                        d="M34.13 21.74C32.157 27.712 26.567 32 20 32v4c8.358 0 15.435-5.458 17.928-13.004L34.13 21.74ZM20 32c-8.21 0-14.89-6.704-14.89-15h-4c0 10.48 8.445 19 18.89 19v-4ZM5.11 17v-1.79h-4V17h4Z"
+                        mask="url(#c)" />
+                      <mask id="d" fill="#fff">
+                        <path d="m40 14.316-3.556 3.579-3.555-3.58" />
+                      </mask>
+                      <path fill="#fff"
+                        d="m36.444 17.895-1.419 1.41 1.42 1.428 1.418-1.429-1.419-1.41Zm2.137-4.989-3.556 3.58 2.838 2.818 3.556-3.578-2.838-2.82Zm-.718 3.58-3.556-3.58-2.837 2.82 3.556 3.578 2.837-2.819Z"
+                        mask="url(#d)" />
+                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                        d="m23.112 21.474-3.556-3.58v-7.052" />
+                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                        d="M29.667 17c0 5.384-4.334 9.737-9.667 9.737-5.332 0-9.666-4.353-9.666-9.737S14.668 7.263 20 7.263c5.333 0 9.667 4.353 9.667 9.737Z" />
+                    </svg>
+                  </span>
+                  <span class="countdown__label">До торгов осталось</span>
+                  <div class="countdown__time">
+                    <ul class="time-counter">
+                      <li class="time-counter__item">
+                        <span class="time-counter__numbers" id="days">00</span>д
+                      </li>
+                      <li class="time-counter__item">
+                        <span class="time-counter__numbers" id="hours">03</span>час
+                      </li>
+                      <li class="time-counter__item">
+                        <span class="time-counter__numbers" id="minutes">51</span>мин.
+                      </li>
+                      <li class="time-counter__item">
+                        <span class="time-counter__numbers" id="seconds">35</span>сек
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__head-col">
+              <div class="custom-select-group">
+                <!-- Кастомный выпадающий список  -->
+                <div class="custom-select" data-default="Любая">
+                  <span class="custom-select-group__label">Город</span>
+                  <div class="custom-select__selected"><span>Любой</span></div>
+                  <div class="custom-select__options">
+                    <div class="custom-select__options-scroll">
+                      <div class="custom-select__option" data-value="Любая"><span>Любой</span></div>
+                      <div class="custom-select__option" data-value="Вариант 1"><span>Краснодар</span></div>
+                      <div class="custom-select__option" data-value="Вариант 2"><span>Ростов-на-Дону</span></div>
+                    </div>
 
-        <h2 class="title"><span>Cписок лотов</span></h2>
+                  </div>
+                  <input class="visually-hidden" type="hidden" value="Любая" required>
+                </div>
 
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Тело витрины  -->
+        <div class="showcase__body">
+
+
+          <div class="preview-cards">
+
+            <h2 class="title"><span>23.10.2024 14:00:00</span> Седаны от 200 000 до 500 000 ч.1 (5 авто)</h2>
+
+            <ul class="preview-cards__list">
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/3.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="preview-cards">
+
+            <h2 class="title"><span>23.10.2024 14:00:00</span> Седаны от 200 000 до 500 000 ч.1 (5 авто)</h2>
+
+            <ul class="preview-cards__list">
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/3.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="preview-cards">
+
+            <h2 class="title"><span>23.10.2024 14:00:00</span> Седаны от 200 000 до 500 000 ч.1 (5 авто)</h2>
+
+            <ul class="preview-cards__list">
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/3.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/1.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+
+              <li class="preview-cards__item">
+                <article class="card-preview">
+                  <a href="#" class="card-preview__link">
+                    <div class="card-preview__photo">
+                      <img src="./img/card-preview/2.jpg" alt="#" loading="lazy">
+                    </div>
+                    <h3 class="card-preview__name"><b>Renault Logan</b> 2010</h3>
+                    <p class="card-preview__text">1.6 МТ (102 л.с.), бензин, передний, седан, бежевый , 238 000 км.</p>
+                    <b class="card-preview__price">400 000 ₽</b>
+                    <span class="card-preview__address">Краснодар</span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
 
       </div>
     </section>
+
+
   </main>
 
   <!-- Подвал  -->
-  <footer class="footer">
 
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <!-- Как это работает  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <img src="./img/footer-navigation/1.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="footer-navigation__name">Как это работает</span>
+                </a>
+              </li>
+              <!-- Техподдержка  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <img src="./img/footer-navigation/2.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="footer-navigation__name">Техподдержка</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__copyright">Предложение носит исключительно информационный характер и ни при каких условиях
+            не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской
+            Федерации.</p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+
+
 
 
   <!-- Скрипты  -->

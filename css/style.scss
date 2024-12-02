@@ -18,10 +18,17 @@
 @import "./components/blocks/full-width";
 @import "./components/blocks/menu-button";
 @import "./components/blocks/icon";
+@import "./components/blocks/countdown";
+@import "./components/blocks/time-counter";
+@import "./components/blocks/custom-select";
+@import "./components/blocks/trading-statistics";
+@import "./components/blocks/card-preview";
 
 
 // Группы - сочетание двух и более блоков
 @import "./components/groups/title-group";
+@import "./components/groups/custom-select-group";
+
 
 // Большие смысловые разделы
 @import "./components/sections/header";
@@ -29,9 +36,10 @@
 
 @import "./components/sections/inner-content";
 
-
 @import "./components/sections/footer";
 @import "./components/sections/mobile-nav";
+@import "./components/sections/showcase";
+@import "./components/sections/preview-cards";
 
 // Шаблоны страниц
 @import "./components/templates/inner-page";

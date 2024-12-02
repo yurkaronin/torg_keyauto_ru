@@ -1,0 +1,29 @@
+.custom-select-group {
+  display: grid;
+  gap: 10px 16px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  position: relative;
+  // padding: 8px 24px 14px;
+  &__label {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--grey);
+    // padding-inline: 24px;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 10px;
+  }
+  .custom-select__selected {
+    min-height: var(--min-height);
+    padding-top: 28px;
+  }
+  .custom-select__option {
+    padding: 20px 16px;
+    font-size: 18px;
+  }
+}

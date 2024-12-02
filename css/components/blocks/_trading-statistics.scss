@@ -1,0 +1,21 @@
+.trading-statistics {
+  font-weight: 400;
+  color: var(--graphite);
+  font-size: 26px;
+  line-height: 154%;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    & + & {
+      margin-top: 12px;
+    }
+    b {
+      font-weight: 600;
+      font-family: var(--second-family);
+    }
+  }
+}

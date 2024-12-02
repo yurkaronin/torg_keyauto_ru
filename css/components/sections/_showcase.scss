@@ -1,0 +1,21 @@
+.showcase {
+  &__head {
+    margin-bottom: 21px;
+  }
+
+  .custom-select {
+  }
+  &__head-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+  }
+
+  @media (max-width: 767px) {
+    &__head-grid {
+      gap: 12px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
