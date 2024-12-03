@@ -8,6 +8,8 @@
   font-size: 14px;
   line-height: 1;
   color: var(--white-08);
+  display: flex;
+  align-items: center;
   &::before {
     content: "";
     display: block;
@@ -48,6 +50,7 @@
     display: grid;
     gap: 14px;
     grid-template-columns: auto 1fr;
+    align-items: center;
   }
   &--mod {
   }
@@ -56,6 +59,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
   &__label {
   }
@@ -111,6 +115,14 @@
       border: 1px solid var(--light-grey);
     }
   }
+  &__message {
+    font-weight: 800;
+    font-size: 24px;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1;
+   // color: var(--graphite);
+  }
 
   @media (max-width: 1023px) {
     padding: 17px 16px 12px;
@@ -134,7 +146,7 @@
       top: calc(100% + 16px);
       left: -20px;
       right: -20px;
-  }
+    }
   }
   @media (max-width: 767px) {
     padding: 10px 16px;

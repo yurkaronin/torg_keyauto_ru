@@ -1,0 +1,17 @@
+.end-counter {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--graphite);
+  display: flex;
+  max-width: max-content;
+  align-items: center;
+  background: var(--yellow-green);
+  padding: 6px 24px;
+  min-height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}

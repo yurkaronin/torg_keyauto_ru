@@ -25,6 +25,8 @@
 @import "./components/blocks/card-preview";
 @import "./components/blocks/pagination";
 @import "./components/blocks/showcase-item";
+@import "./components/blocks/end-counter";
+@import "./components/blocks/time-counter-simple";
 
 
 // Группы - сочетание двух и более блоков
@@ -45,6 +47,7 @@
 
 // Шаблоны страниц
 @import "./components/templates/inner-page";
+@import "./components/templates/active-lots";
 
 // Интерактив
 @import "./components/activity/mobile-nav-open";
