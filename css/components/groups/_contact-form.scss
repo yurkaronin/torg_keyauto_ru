@@ -1,0 +1,33 @@
+.contact-form {
+  margin-top: 56px;
+  &__grid {
+    display: grid;
+    gap: 48px 32px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  &__buttons {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    .button {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 18px;
+    &__grid {
+      gap: 15px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__buttons {
+      margin-top: 10px;
+      gap: 15px;
+    }
+    .form-check {
+      margin-top: 5px;
+    }
+  }
+}

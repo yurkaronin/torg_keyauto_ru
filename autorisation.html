@@ -12,8 +12,8 @@
   <meta name="format-detection" content="email=no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
   <!-- Стили  -->
   <link rel="stylesheet" href="./libs/simplebar.css" />
@@ -21,50 +21,126 @@
 
   <link rel="stylesheet" href="./css/style.css?v=1">
 
+
 </head>
 
-<body class="body">
-  <!-- шапка  -->
-  <header class="header">
+<body class="body authorization">
 
-  </header>
+  <div class="authorization__wrapper">
 
-
-  <!-- основной контент  -->
-  <main class="main">
-    <section class="section">
+    <!-- шапка  -->
+    <header class="header">
       <div class="wrapper">
+        <div class="header__grid">
+          <!-- Логотип  -->
+          <div class="header__col header-logo">
+            <a href="./index.html" class="header-logo__link">
+              <img src="./img/logo.svg" alt="#" loading="lazy">
+            </a>
+          </div>
 
-        <h2 class="title"><span>Авторизация</span></h2>
+          <!-- Навигация  -->
+          <div class="header__col">
+            <nav class="header-desktop-navigation">
+              <ul class="header-desktop-navigation__list">
+                <!-- Как это работает  -->
+                <li class="header-desktop-navigation__item">
+                  <a href="#" class="header-desktop-navigation__link">
+                    <span class="header-desktop-navigation__icon">
+                      <img src="./img/header-desktop-navigation/4.svg" alt="#" loading="lazy">
+                    </span>
+                    <span class="header-desktop-navigation__name">Как это работает</span>
+                  </a>
+                </li>
+                <!-- Техподдержка  -->
+                <li class="header-desktop-navigation__item">
+                  <a href="#" class="header-desktop-navigation__link">
+                    <span class="header-desktop-navigation__icon">
+                      <img src="./img/header-desktop-navigation/5.svg" alt="#" loading="lazy">
+                    </span>
+                    <span class="header-desktop-navigation__name">Техподдержка</span>
+                  </a>
+                </li>
 
+              </ul>
+            </nav>
+
+          </div>
+
+        </div>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <!-- Подвал  -->
-  <footer class="footer">
+    <!-- основной контент  -->
+    <main class="main">
 
-  </footer>
+      <!-- Витрина  -->
+      <section class="section inner-content">
+        <div class="wrapper">
+          <h1 class="title title--big">Аукцион авто с пробегом для <span>профессиональных <br>покупателей</span></h1>
+
+          <div class="contact-form">
+            <form action="#">
+              <div class="contact-form__grid">
+
+                <div class="contact-form__col">
+                  <div class="form-item">
+                    <label for="user-name">Логин</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="Введите e-mail">
+                  </div>
+                </div>
+
+                <div class="contact-form__col">
+                  <div class="form-item">
+                    <label for="user-password">Пароль</label>
+                    <input type="password" name="user-password" id="user-password" placeholder="Введите пароль">
+
+                    <a href="#" class="user-forget-password">Забыли пароль?</a>
+                  </div>
+                </div>
+                <div class="contact-form__col">
+                  <div class="form-check">
+                    <input class="visually-hidden" type="checkbox" name="user-remember" id="user-remember" hidden>
+                    <label for="user-remember">Запомнить меня на сайте</label>
+                  </div>
+                </div>
+                <div class="contact-form__col">
+                  <div class="contact-form__buttons">
+                    <a href="#" class="button button--transparent"><span>Регистрация</span></a>
+                    <button class="button" type="submit"><span>Вход</span></button>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+
+  </div>
+
+
+
 
 
   <!-- Скрипты  -->
-
-  <!-- ЯКарта  -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
-    type="text/javascript"></script>
 
   <!-- библиотеки  -->
   <script src="./libs/fslightbox.min.js"></script>
   <script src="./libs/SmoothScroll.min.js"></script>
   <script src="./libs/simplebar.min.js"></script>
-  <script src="./libs/swiper-bundle.min.js"></script>
+  <!-- <script src="./libs/swiper-bundle.min.js"></script> -->
   <script src="./libs/imask.js"></script>
 
   <!-- кастомные скрипты  -->
   <script src="./js/components/custom-select.js"></script>
-  <script src="./js/components/header-sticky.js"></script>
-  <script src="./js/components/mobile-nav-open.js"></script>
-  <script src="./js/components/modals.js"></script>
+  <!-- <script src="./js/components/header-sticky.js"></script> -->
+  <!-- <script src="./js/components/mobile-nav-open.js"></script> -->
+  <!-- <script src="./js/components/modals.js"></script> -->
 
   <!-- Слайдеры  -->
   <!-- <script src="./js/swiper-sliders.js"></script> -->

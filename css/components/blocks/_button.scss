@@ -11,24 +11,19 @@
   align-items: center;
   justify-content: center;
   border: none;
-
+  text-transform: uppercase;
   background-color: transparent;
-  height: 56px;
-  padding: 10px 14px;
+  min-height: 62px;
 
   line-height: 1;
   font-weight: 600;
   font-size: 16px;
   color: var(--white);
-  border-radius: 20px;
+
+  border-radius: 8px;
+  padding: 10px 24px;
 
   span {
-    position: relative;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  svg {
     position: relative;
     z-index: 2;
     pointer-events: none;
@@ -45,104 +40,11 @@
     transition: all 0.3s;
     pointer-events: none;
     z-index: 0;
-    background-color: var(--violet);
-    border-radius: 20px;
+    background-color: var(--anthracite-red);
+    border-radius: 8px;
+    border: 1px solid var(--anthracite-red);
   }
 
-  &--small {
-    height: 48px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-  &--full {
-    max-width: 100%;
-    width: 100%;
-  }
-  &--shadow {
-    &:hover::before {
-      box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
-    }
-  }
-
-  &--white {
-    color: var(--black);
-    &::before {
-      background-color: var(--white);
-    }
-  }
-
-  &--green {
-    &::before {
-      background-color: var(--green);
-    }
-  }
-
-  &--transparent {
-    border-radius: 32px;
-    &::before {
-      background-color: transparent;
-      border: 2px solid var(--white);
-      border-radius: 32px;
-    }
-    &:hover {
-      &::before {
-        background-color: var(--green);
-        border-color: transparent;
-      }
-    }
-  }
-  &--big {
-    padding-inline: 46px;
-  }
-
-  &--icon {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 8px;
-    align-items: center;
-  }
-  &--icon-solo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: 0;
-    width: 48px;
-    height: 48px;
-    max-width: initial;
-    &::before {
-      border-radius: 50%;
-    }
-
-    svg {
-      display: block;
-    }
-  }
-  &--counter {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 8px;
-    align-items: center;
-    padding-inline: 24px;
-  }
-
-  .counter {
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: var(--white);
-    display: flex;
-    width: 32px;
-    height: 32px;
-    background-color: var(--violet);
-    align-items: center;
-    justify-content: center;
-  }
-
-  &--long {
-    padding-inline: 50px;
-  }
 
   &:hover {
     &::before {
@@ -150,18 +52,29 @@
       bottom: -4px;
       right: -4px;
       left: -4px;
+      background-color: var(--red);
     }
   }
 
-  &.isActive {
-    color: var(--white);
+  &--transparent {
+    color: var(--graphite);
     &::before {
-      background-color: var(--green);
+      background-color: transparent;
+      border: 1px solid var(--anthracite-red);
+      // border-radius: 32px;
+    }
+    &:hover {
+      &::before {
+        border: 1px solid var(--red);
+        background-color: transparent;
+      }
     }
   }
+
 
   @media (max-width: 1023px) {
     font-size: 14px;
+    padding-inline: 12px;
   }
 
   @media (max-width: 767px) {

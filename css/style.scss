@@ -27,11 +27,16 @@
 @import "./components/blocks/showcase-item";
 @import "./components/blocks/end-counter";
 @import "./components/blocks/time-counter-simple";
+@import "./components/blocks/form-item";
+@import "./components/blocks/form-check";
+@import "./components/blocks/user-forget-password";
+
 
 
 // Группы - сочетание двух и более блоков
 @import "./components/groups/title-group";
 @import "./components/groups/custom-select-group";
+@import "./components/groups/contact-form";
 
 
 // Большие смысловые разделы
@@ -47,7 +52,7 @@
 
 // Шаблоны страниц
 @import "./components/templates/inner-page";
-@import "./components/templates/active-lots";
+@import "./components/templates/authorization";
 
 // Интерактив
 @import "./components/activity/mobile-nav-open";

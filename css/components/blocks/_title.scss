@@ -6,12 +6,27 @@
   font-size: 48px;
   line-height: 117%;
   color: var(--graphite);
+  span {
+    color: var(--anthracite-red);
+  }
   & + * {
     margin-top: 1rem;
+  }
+  &--big {
+    font-size: 64px;
+  }
+
+  @media (max-width: 1279px) {
+    &--big {
+      font-size: 48px;
+    }
   }
 
 
   @media (max-width: 767px) {
     font-size: 30px;
+    &--big {
+      font-size: 25px;
+    }
   }
 }
