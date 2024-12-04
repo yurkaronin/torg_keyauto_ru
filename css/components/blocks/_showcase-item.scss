@@ -121,7 +121,19 @@
     position: relative;
     text-transform: uppercase;
     line-height: 1;
-   // color: var(--graphite);
+    // color: var(--graphite);
+  }
+
+  // модификация
+  &--active-lots {
+    color: var(--graphite);
+  }
+  &--active-lots::before {
+    background-color: var(--yellow-green);
+  }
+
+  &--active-lots:hover &__icon svg {
+    filter: invert(1);
   }
 
   @media (max-width: 1023px) {

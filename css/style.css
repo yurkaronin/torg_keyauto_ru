@@ -1731,6 +1731,16 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   line-height: 1;
 }
+.showcase-item--active-lots {
+  color: var(--graphite);
+}
+.showcase-item--active-lots::before {
+  background-color: var(--yellow-green);
+}
+.showcase-item--active-lots:hover .showcase-item__icon svg {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
 @media (max-width: 1023px) {
   .showcase-item {
     padding: 17px 16px 12px;
@@ -1774,7 +1784,6 @@ input[type=radio].visually-hidden {
 .end-counter {
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.02em;
   color: var(--graphite);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1785,7 +1794,7 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--yellow-green);
+  background: transparent;
   padding: 6px 24px;
   min-height: 32px;
   border-radius: 8px;
@@ -1793,6 +1802,32 @@ input[type=radio].visually-hidden {
   line-height: 1;
   margin-top: 16px;
   margin-bottom: 32px;
+  position: relative;
+}
+.end-counter::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: var(--yellow-green);
+  border-radius: 8px;
+}
+.end-counter__text {
+  position: relative;
+}
+.end-counter .time-counter-simple {
+  position: relative;
+}
+.end-counter:hover::before {
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
 }
 
 .time-counter-simple {
