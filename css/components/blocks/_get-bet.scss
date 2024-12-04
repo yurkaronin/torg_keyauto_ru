@@ -1,0 +1,36 @@
+.get-bet {
+  border: 1px solid var(--yellow-green);
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    width: 100%;
+  }
+  &__left {
+    padding: 9px 24px 11px;
+  }
+  &__label {
+    display: block;
+    margin: 0;
+    line-height: 1.4;
+  }
+  &__price {
+    display: block;
+    margin: 0;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--graphite);
+    line-height: 1;
+  }
+  .button {
+    max-width: 100%;
+    width: 100%;
+    font-size: 14px;
+    min-height: 100%;
+  }
+}

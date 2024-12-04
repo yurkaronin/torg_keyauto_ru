@@ -7,6 +7,7 @@
 
 // Блоки - самые простые компоненты
 @import "./components/blocks/wrapper";
+@import "./components/blocks/sticky";
 @import "./components/blocks/title";
 @import "./components/blocks/button";
 @import "./components/blocks/section";
@@ -30,6 +31,10 @@
 @import "./components/blocks/form-item";
 @import "./components/blocks/form-check";
 @import "./components/blocks/user-forget-password";
+@import "./components/blocks/breadcrumbs-link";
+@import "./components/blocks/documents-list";
+@import "./components/blocks/get-bet";
+@import "./components/blocks/data-table";
 
 
 
@@ -49,6 +54,7 @@
 @import "./components/sections/mobile-nav";
 @import "./components/sections/showcase";
 @import "./components/sections/preview-cards";
+@import "./components/sections/lot-card";
 
 // Шаблоны страниц
 @import "./components/templates/inner-page";

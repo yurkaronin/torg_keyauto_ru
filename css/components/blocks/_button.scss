@@ -71,6 +71,21 @@
     }
   }
 
+  &--promo {
+    color: var(--graphite);
+    &::before {
+      background-color: var(--yellow-green);
+      border: 1px solid var(--yellow-green);
+    }
+
+    &:hover {
+      &::before {
+        border: 1px solid var(--yellow-green);
+        background-color: var(--yellow-green);
+      }
+    }
+  }
+
 
   @media (max-width: 1023px) {
     font-size: 14px;
@@ -78,25 +93,6 @@
   }
 
   @media (max-width: 767px) {
-    &--icon-solo {
-      width: 50px;
-      height: 50px;
-    }
-
-    &--large {
-      height: 50px;
-    }
-    &--read-more {
-      height: 50px;
-    }
-    &--small {
-      height: 45px;
-    }
-    &--big {
-      padding-inline: 16px;
-    }
-    &--long {
-      padding-inline: 20px;
-    }
+    min-height: 53px;
   }
 }
