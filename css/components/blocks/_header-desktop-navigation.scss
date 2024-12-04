@@ -16,6 +16,25 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--white);
+    padding-bottom: 9px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0px;
+      height: 4px;
+      background-color: var(--red);
+      bottom: 0;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
   }
   &__icon {
     display: flex;
