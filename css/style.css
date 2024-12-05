@@ -1411,6 +1411,7 @@ input[type=radio].visually-hidden {
   }
   .pagination__list {
     gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
   }
   .pagination__item--hide {
     display: none;
@@ -2043,6 +2044,27 @@ input[type=radio].visually-hidden {
   background-color: var(--graphite);
   color: var(--white);
 }
+.data-table a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: var(--anthracite-red);
+}
+.data-table__id {
+  width: 90px;
+}
+.data-table__name {
+  width: 140px;
+}
+.data-table__actions {
+  width: 130px;
+}
+.data-table__autor {
+  width: 215px;
+}
+.data-table__end {
+  width: 110px;
+}
 @media (max-width: 650px) {
   .data-table table {
     width: -moz-max-content !important;
@@ -2201,6 +2223,12 @@ input[type=radio].visually-hidden {
 .contact-form__buttons .button {
   max-width: 100%;
   width: 100%;
+}
+@media (max-width: 1279px) {
+  .contact-form__buttons .button {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .contact-form {
@@ -2385,18 +2413,46 @@ input[type=radio].visually-hidden {
   gap: 32px;
   grid-template-columns: 1fr 3fr;
 }
+.control-panel .data-table {
+  margin-bottom: 23px;
+}
+.control-panel__content {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.control-panel__table {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 @media (max-width: 1152px) {
   .control-panel {
     border-radius: 0;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .control-panel__grid {
     gap: 0;
     grid-template-columns: 1fr;
   }
   .control-panel__aside {
     margin-bottom: 37px;
+  }
+}
+@media (max-width: 900px) {
+  .control-panel .data-table {
+    overflow: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .control-panel .data-table table {
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+}
+@media (max-width: 768px) {
+  .control-panel__content .contact-form__buttons {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

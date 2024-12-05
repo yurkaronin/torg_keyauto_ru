@@ -12,17 +12,52 @@
     grid-template-columns: 1fr 3fr;
   }
 
+  .data-table {
+    margin-bottom: 23px;
+  }
+
+  &__content {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  &__table {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   @media (max-width: 1152px) {
     border-radius: 0;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1279px) {
     &__grid {
       gap: 0;
       grid-template-columns: 1fr;
     }
+
     &__aside {
       margin-bottom: 37px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .data-table {
+      overflow: auto;
+      max-width: 100%;
+      width: 100%;
+
+      table {
+        width: max-content !important;
+      }
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    &__content .contact-form__buttons {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 

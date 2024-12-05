@@ -144,7 +144,7 @@
   <main class="main">
 
     <!-- Панель управления кабинетом  -->
-    <section class="section control-panel">
+    <section class="section control-panel all-lots">
       <div class="wrapper">
         <div class="control-panel__grid">
           <!-- боковая панель  -->
@@ -210,7 +210,7 @@
                   </li>
 
                   <li class="personal-navigation__item">
-                    <a href="#"  class="personal-navigation__link">
+                    <a href="#" class="personal-navigation__link">
                       <span>Мои активные элементы</span>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -311,6 +311,96 @@
                 </div>
 
               </form>
+            </div>
+            <div class="control-panel__table">
+              <div class="data-table data-table--mod">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="data-table__id">Id лота</th>
+                      <th class="data-table__name">Название лота</th>
+                      <th class="data-table__list">Автомобили лота</th>
+                      <th class="data-table__actions">Действия</th>
+                      <th class="data-table__autor">Создал/отредактировал</th>
+                      <th class="data-table__end">Окончание аукциона</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="data-table__id">99195</td>
+                      <td class="data-table__name"><a href="#">Hyundai Elantra</a></td>
+                      <td class="data-table__list">Hyundai Elantra — KMHDU41BP8U481508 (ID - 99194)</td>
+                      <td class="data-table__actions"><a href="#">Редактировать</a></td>
+                      <td class="data-table__autor">Создал - Илья Пьянков (7664)<br>
+                        Изменил - Илья Пьянков (7664)</td>
+                      <td class="data-table__end">30.11.2023<br>16:00:00</td>
+                    </tr>
+                    <tr>
+                      <td class="data-table__id">99195</td>
+                      <td class="data-table__name"><a href="#">Hyundai Elantra</a></td>
+                      <td class="data-table__list">Hyundai Elantra — KMHDU41BP8U481508 (ID - 99194)</td>
+                      <td class="data-table__actions"><a href="#">Редактировать</a></td>
+                      <td class="data-table__autor">Создал - Илья Пьянков (7664)<br>
+                        Изменил - Илья Пьянков (7664)</td>
+                      <td class="data-table__end">30.11.2023<br>16:00:00</td>
+                    </tr>
+                    <tr>
+                      <td class="data-table__id">99195</td>
+                      <td class="data-table__name"><a href="#">Hyundai Elantra</a></td>
+                      <td class="data-table__list">Hyundai Elantra — KMHDU41BP8U481508 (ID - 99194)</td>
+                      <td class="data-table__actions"><a href="#">Редактировать</a></td>
+                      <td class="data-table__autor">Создал - Илья Пьянков (7664)<br>
+                        Изменил - Илья Пьянков (7664)</td>
+                      <td class="data-table__end">30.11.2023<br>16:00:00</td>
+                    </tr>
+                    <tr>
+                      <td class="data-table__id">99195</td>
+                      <td class="data-table__name"><a href="#">Hyundai Elantra</a></td>
+                      <td class="data-table__list">Hyundai Elantra — KMHDU41BP8U481508 (ID - 99194)</td>
+                      <td class="data-table__actions"><a href="#">Редактировать</a></td>
+                      <td class="data-table__autor">Создал - Илья Пьянков (7664)<br>
+                        Изменил - Илья Пьянков (7664)</td>
+                      <td class="data-table__end">30.11.2023<br>16:00:00</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+
+            <!-- Пагинация -->
+            <div class="pagination pagination--mod">
+              <a href="#" class="pagination__button pagination__button--prev"></a>
+              <ul class="pagination__list list-reset">
+                <li class="pagination__item">
+                  <a class="pagination__link current-page"><span>1</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link click"><span>2</span></a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link click"><span>3</span></a>
+                </li>
+                <li class="pagination__item pagination__item--hide">
+                  <a href="#" class="pagination__link click"><span>4</span></a>
+                </li>
+                <li class="pagination__item pagination__item--hide">
+                  <a href="#" class="pagination__link click"><span>5</span></a>
+                </li>
+
+                <li class="pagination__item pagination__item">
+                  <a class="pagination__link pagination__link--dots"><span>...</span></a>
+                </li>
+
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link click"><span>12</span></a>
+                </li>
+              </ul>
+              <a href="#" class="pagination__button pagination__button--next"></a>
+
+
             </div>
 
           </div>

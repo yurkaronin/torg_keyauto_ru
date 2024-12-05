@@ -47,6 +47,30 @@
     // border: 1px solid var(--graphite);
   }
 
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--anthracite-red);
+  }
+  &__id {
+    width: 90px;
+  }
+  &__name {
+    width: 140px;
+  }
+  &__list {
+    // width: 210px;
+  }
+  &__actions {
+    width: 130px;
+  }
+  &__autor {
+    width: 215px;
+  }
+  &__end {
+    width: 110px;
+  }
+
   @media (max-width: 650px) {
     table {
       width: max-content !important;

@@ -41,6 +41,15 @@
     }
   }
 
+  @media (max-width: 1279px) {
+    &__buttons {
+      .button {
+        padding: 10px 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
   @media (max-width: 767px) {
     margin-top: 18px;
 
