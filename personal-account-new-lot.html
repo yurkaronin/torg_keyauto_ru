@@ -210,7 +210,7 @@
                   </li>
 
                   <li class="personal-navigation__item">
-                    <a href="#"  class="personal-navigation__link">
+                    <a href="#" class="personal-navigation__link">
                       <span>Мои активные элементы</span>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -281,9 +281,110 @@
               </div>
             </div>
           </aside>
+
           <!-- текущая информация вкладки  -->
           <div class="control-panel__content">
             <h1 class="title">Новый лот</h1>
+
+            <div class="personal-account-form">
+              <form action="#">
+
+                <div class="personal-account-form__group">
+                  <div class="personal-account-form__col">
+                    <label for="item-name">Название лота</label>
+                    <div class="form-item form-item--mod">
+                      <input type="text" name="item-name" id="item-name" placeholder="Введите название">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="personal-account-form__group">
+                  <div class="personal-account-form__col">
+                    <label for="item-name">Город</label>
+
+                    <div class="custom-select" data-default="Любая">
+                      <div class="custom-select__selected"><span>Любой</span></div>
+                      <div class="custom-select__options">
+                        <div class="custom-select__options-scroll">
+                          <div class="custom-select__option" data-value="Любая"><span>Любой</span></div>
+                          <div class="custom-select__option" data-value="Вариант 1"><span>Краснодар</span></div>
+                          <div class="custom-select__option" data-value="Вариант 2"><span>Ростов-на-Дону</span></div>
+                        </div>
+
+                      </div>
+                      <input class="visually-hidden" type="hidden" value="Любая" required>
+                    </div>
+
+                  </div>
+
+                  <div class="personal-account-form__col">
+                    <label for="item-name">Дилерский центр</label>
+
+                    <div class="custom-select" data-default="Любая">
+                      <div class="custom-select__selected"><span>Любой</span></div>
+                      <div class="custom-select__options">
+                        <div class="custom-select__options-scroll">
+                          <div class="custom-select__option" data-value="Любая"><span>Любой</span></div>
+                          <div class="custom-select__option" data-value="Вариант 1"><span>Краснодар</span></div>
+                          <div class="custom-select__option" data-value="Вариант 2"><span>Ростов-на-Дону</span></div>
+                        </div>
+
+                      </div>
+                      <input class="visually-hidden" type="hidden" value="Любая" required>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="personal-account-form__group">
+
+                  <div class="personal-account-form__col">
+                    <label for="item-date-end">Дата окончания аукциона</label>
+                    <div class="form-item form-item--mod">
+                      <input type="date" name="item-date-end" id="item-date-end">
+                    </div>
+                  </div>
+
+                  <div class="personal-account-form__col ">
+                    <label for="item-start-price">Стартовая ставка</label>
+                    <div class="form-item form-item--mod form-item--short">
+                      <input type="text" name="item-start-price" id="item-start-price" placeholder="Введите ставку">
+                    </div>
+                  </div>
+
+                  <div class="personal-account-form__col">
+                    <label for="item-step-price">Шаг ставки</label>
+                    <div class="form-item form-item--mod form-item--short">
+                      <input type="text" name="item-step-price" id="item-step-price" placeholder="Установите шаг">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="personal-account-form__group">
+
+                  <div class="personal-account-form__col">
+                    <label for="item-user-contacts">Контактный блок</label>
+                    <div class="form-item form-item--mod form-item--textarea">
+                      <textarea name="item-user-contacts" id="item-user-contacts" placeholder="Введите контакты"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="personal-account-form__col">
+                    <label for="item-desc">Общее описание лота</label>
+                    <div class="form-item form-item--mod form-item--textarea">
+                      <textarea name="item-desc" id="item-desc" placeholder="Введите описание"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="personal-account-form__footer">
+                  <button class="button" type="submit"><span>сохранить лот</span></button>
+                </div>
+
+
+
+              </form>
+            </div>
 
           </div>
         </div>

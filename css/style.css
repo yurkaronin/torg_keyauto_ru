@@ -1732,6 +1732,40 @@ input[type=radio].visually-hidden {
   }
 }
 
+.form-item--mod {
+  height: 56px;
+}
+.form-item--mod input {
+  padding: 15px 24px;
+}
+
+.form-item--textarea {
+  height: 160px;
+}
+.form-item--textarea textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 10px 24px 17px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--graphite);
+  display: block;
+  outline: none;
+}
+@media (max-width: 767px) {
+  .form-item--textarea {
+    height: 150px;
+  }
+  .form-item--textarea textarea {
+    padding: 13px 20px 17px;
+    font-size: 16px;
+  }
+}
+
 .form-check label {
   position: relative;
   padding-left: 48px;
@@ -2188,6 +2222,92 @@ input[type=radio].visually-hidden {
   }
 }
 
+.personal-account-form {
+  margin-top: 56px;
+}
+.personal-account-form__group {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: flex-end;
+}
+.personal-account-form__group:not(:last-of-type) {
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--light-grey);
+  margin-bottom: 23px;
+}
+.personal-account-form__col {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+.personal-account-form__col label {
+  margin-top: 16px;
+}
+.personal-account-form .form-item--short {
+  max-width: 50%;
+}
+.personal-account-form__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 123%;
+  color: var(--graphite);
+}
+.personal-account-form__buttons {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.personal-account-form__buttons--mod .button {
+  grid-column: 2/3;
+}
+.personal-account-form__buttons .button {
+  max-width: 100%;
+  width: 100%;
+}
+.personal-account-form__footer .button {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .personal-account-form {
+    margin-top: 18px;
+  }
+  .personal-account-form__grid {
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .personal-account-form__col {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .personal-account-form__col--mod {
+    grid-column: initial;
+  }
+  .personal-account-form__buttons {
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .personal-account-form .form-check {
+    margin-top: 5px;
+  }
+  .personal-account-form .form-item--short {
+    max-width: 100%;
+  }
+  .personal-account-form__footer .button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .personal-account-form__col label {
+    margin-top: 0;
+  }
+}
+
 .header {
   padding-top: 32px;
   padding-bottom: 35px;
@@ -2268,6 +2388,15 @@ input[type=radio].visually-hidden {
 @media (max-width: 1152px) {
   .control-panel {
     border-radius: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .control-panel__grid {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .control-panel__aside {
+    margin-bottom: 37px;
   }
 }
 
