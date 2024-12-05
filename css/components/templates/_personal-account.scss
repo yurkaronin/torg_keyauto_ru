@@ -20,10 +20,20 @@
 
   .main {
     max-width: 1424px;
+    min-height: initial;
   }
 
   .footer {
     max-width: 1424px;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .contact-form__grid {
+    gap: 32px;
   }
 
   @media (max-width: 1023px) {
@@ -33,6 +43,11 @@
 
     .header-desktop-navigation__link {
       font-size: 12px;
+    }
+  }
+  @media (max-width: 767px) {
+    .contact-form__grid {
+      gap: 15px;
     }
   }
 }

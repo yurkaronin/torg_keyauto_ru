@@ -1,15 +1,40 @@
 .contact-form {
   margin-top: 56px;
+
   &__grid {
     display: grid;
     gap: 48px 32px;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: flex-end;
   }
+
+  &__col {
+    &--mod {
+      grid-column: 2/3;
+
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 123%;
+    color: var(--graphite);
+  }
+
   &__buttons {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(2, 1fr);
+    &--mod {
+      .button {
+        grid-column: 2/3;
+      }
+    }
+
     .button {
       max-width: 100%;
       width: 100%;
@@ -18,14 +43,24 @@
 
   @media (max-width: 767px) {
     margin-top: 18px;
+
     &__grid {
       gap: 15px;
       grid-template-columns: repeat(1, 1fr);
     }
+
+    &__col {
+      &--mod {
+        grid-column: initial;
+
+      }
+    }
+
     &__buttons {
       margin-top: 10px;
       gap: 15px;
     }
+
     .form-check {
       margin-top: 5px;
     }

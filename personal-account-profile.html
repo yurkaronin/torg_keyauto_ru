@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Личный кабинет профиль</title>
+  <title>Профиль</title>
 
   <meta name="format-detection" content="telephone=no">
   <meta name="format-detection" content="date=no">
@@ -12,8 +12,8 @@
   <meta name="format-detection" content="email=no">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
   <!-- Стили  -->
   <link rel="stylesheet" href="./libs/simplebar.css" />
@@ -24,29 +24,268 @@
 
 </head>
 
-<body class="body">
+<body class="body personal-account">
+
   <!-- шапка  -->
   <header class="header">
+    <div class="wrapper">
+      <div class="header__grid">
+        <!-- Логотип  -->
+        <div class="header__col header-logo">
+          <a href="./index.html" class="header-logo__link">
+            <img src="./img/logo.svg" alt="#" loading="lazy">
+          </a>
+        </div>
 
+        <!-- Навигация  -->
+        <div class="header__col">
+          <nav class="header-desktop-navigation">
+            <ul class="header-desktop-navigation__list">
+              <!-- Торги  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/1.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Торги</span>
+                </a>
+              </li>
+              <!-- Личный кабинет  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/2.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Личный кабинет</span>
+                </a>
+              </li>
+              <!-- Админка аукциона  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/6.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Админка аукциона</span>
+                </a>
+              </li>
+              <!-- Выход  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <img src="./img/header-desktop-navigation/3.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="header-desktop-navigation__name">Выход</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Кнопка показа мобильного меню  -->
+          <button class="menu-button js-menu-button-mobile" title="Открыть мобильное меню" type="button">
+            <span class="menu-button__border"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
   </header>
 
+  <!-- Мобильное меню  -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <!-- Торги  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--sale"></span>
+          <span class="mobile-nav__item-name">Торги</span>
+        </a>
+      </li>
+      <!-- Личный кабинет  -->
+      <li class="mobile-nav__item">
+
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--user"></span>
+          <span class="mobile-nav__item-name">Личный кабинет</span>
+        </a>
+      </li>
+      <!-- Админка аукциона  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--gear"></span>
+          <span class="mobile-nav__item-name">Админка аукциона</span>
+        </a>
+      </li>
+      <!-- Как это работает?  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--inform"></span>
+          <span class="mobile-nav__item-name">Как это работает?</span>
+        </a>
+      </li>
+      <!-- Техподдержка  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--support"></span>
+          <span class="mobile-nav__item-name">Техподдержка</span>
+        </a>
+      </li>
+      <!-- Выход  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="icon icon--exit"></span>
+          <span class="mobile-nav__item-name">Выход</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- основной контент  -->
   <main class="main">
-    <section class="section">
+
+    <!-- Панель управления кабинетом  -->
+    <section class="section control-panel">
       <div class="wrapper">
+        <div class="control-panel__grid">
+          <!-- боковая панель  -->
+          <aside class="control-panel__aside">
+            <div class="personal-navigation">
 
-        <h2 class="title"><span>Личный кабинет профиль</span></h2>
+              <div class="personal-navigation__group">
+                <ul class="personal-navigation__list">
+                  <li class="personal-navigation__item">
+                    <a href="#" class="personal-navigation__link">
+                      <span>Мои ставки</span>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </li>
 
+                  <li class="personal-navigation__item">
+                    <a href="#" class="personal-navigation__link">
+                      <span>История покупок</span>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="personal-navigation__item">
+                    <a class="personal-navigation__link current">
+                      <span>Профиль</span>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </aside>
+          <!-- текущая информация вкладки  -->
+          <div class="control-panel__content">
+            <h1 class="title">Профиль</h1>
+
+            <div class="contact-form">
+              <form action="#">
+                <div class="contact-form__grid">
+
+                  <div class="contact-form__col">
+                    <div class="form-item">
+                      <label for="item-tel">Телефон</label>
+                      <input type="tel" name="item-tel" id="item-tel" placeholder="+7 (928) 124 78 96">
+                    </div>
+                  </div>
+
+                  <div class="contact-form__col">
+                    <div class="form-item">
+                      <label for="item-email">Логин</label>
+                      <input type="email" name="item-email" id="item-email" placeholder="login@gmail.com">
+                    </div>
+                  </div>
+
+                  <div class="contact-form__col">
+                    <h3 class="contact-form__title">Сменить пароль</h3>
+                    <div class="form-item">
+                      <label for="item-password">Новый пароль</label>
+                      <input type="password" name="item-password" id="item-password" placeholder="Введите новый пароль">
+                    </div>
+                  </div>
+
+                  <div class="contact-form__col">
+                    <div class="form-item">
+                      <label for="item-password-repeat">Повтор пароля</label>
+                      <input type="password" name="item-password-repeat" id="item-password-repeat"
+                        placeholder="Повторите новый пароль">
+                    </div>
+                  </div>
+
+                  <div class="contact-form__col contact-form__col--mod">
+                    <div class="contact-form__buttons contact-form__buttons--mod">
+                      <button class="button" type="submit"><span>Сохранить</span></button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     </section>
+
+
   </main>
 
   <!-- Подвал  -->
-  <footer class="footer">
 
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <!-- Как это работает  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <img src="./img/footer-navigation/1.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="footer-navigation__name">Как это работает</span>
+                </a>
+              </li>
+              <!-- Техподдержка  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <img src="./img/footer-navigation/2.svg" alt="#" loading="lazy">
+                  </span>
+                  <span class="footer-navigation__name">Техподдержка</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__copyright">Предложение носит исключительно информационный характер и ни при каких условиях
+            не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской
+            Федерации.</p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+
+
 
 
   <!-- Скрипты  -->

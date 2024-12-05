@@ -2142,12 +2142,27 @@ input[type=radio].visually-hidden {
   display: grid;
   gap: 48px 32px;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  align-items: flex-end;
+}
+.contact-form__col--mod {
+  grid-column: 2/3;
+}
+.contact-form__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 123%;
+  color: var(--graphite);
 }
 .contact-form__buttons {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(2, 1fr);
+}
+.contact-form__buttons--mod .button {
+  grid-column: 2/3;
 }
 .contact-form__buttons .button {
   max-width: 100%;
@@ -2160,6 +2175,9 @@ input[type=radio].visually-hidden {
   .contact-form__grid {
     gap: 15px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-form__col--mod {
+    grid-column: initial;
   }
   .contact-form__buttons {
     margin-top: 10px;
@@ -2240,6 +2258,7 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
   padding-top: 37px;
   padding-bottom: 45px;
+  min-height: 75vh;
 }
 .control-panel__grid {
   display: grid;
@@ -2819,9 +2838,17 @@ input[type=radio].visually-hidden {
 }
 .personal-account .main {
   max-width: 1424px;
+  min-height: initial;
 }
 .personal-account .footer {
   max-width: 1424px;
+}
+.personal-account .contact-form {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.personal-account .contact-form__grid {
+  gap: 32px;
 }
 @media (max-width: 1023px) {
   .personal-account .header-desktop-navigation__list {
@@ -2829,6 +2856,11 @@ input[type=radio].visually-hidden {
   }
   .personal-account .header-desktop-navigation__link {
     font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .personal-account .contact-form__grid {
+    gap: 15px;
   }
 }
 
