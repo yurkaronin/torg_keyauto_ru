@@ -33,4 +33,17 @@
     font-size: 14px;
     min-height: 100%;
   }
+
+  @media (max-width: 767px) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__left {
+      padding: 10px 24px;
+    }
+    .button {
+      min-height: 55px;
+    }
+  }
 }

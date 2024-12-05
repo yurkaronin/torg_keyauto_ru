@@ -1957,12 +1957,25 @@ input[type=radio].visually-hidden {
   font-size: 14px;
   min-height: 100%;
 }
+@media (max-width: 767px) {
+  .get-bet__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .get-bet__left {
+    padding: 10px 24px;
+  }
+  .get-bet .button {
+    min-height: 55px;
+  }
+}
 
 .data-table {
   font-size: 16px;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: auto;
   border: 1px solid var(--light-grey);
+  max-width: 100%;
+  width: 100%;
 }
 .data-table table {
   border-collapse: collapse;
@@ -1971,7 +1984,8 @@ input[type=radio].visually-hidden {
   width: 100%;
   border-collapse: collapse;
 }
-.data-table th, .data-table td {
+.data-table th,
+.data-table td {
   padding: 15px 10px;
   text-align: left;
   border-top: 1px solid #d9d9d9;
@@ -1994,6 +2008,16 @@ input[type=radio].visually-hidden {
 .data-table thead th {
   background-color: var(--graphite);
   color: var(--white);
+}
+@media (max-width: 650px) {
+  .data-table table {
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 12px 10px;
+  }
 }
 
 .custom-select-group {
@@ -2410,7 +2434,7 @@ input[type=radio].visually-hidden {
   font-weight: 600;
   font-size: 16px;
   color: var(--graphite);
-  padding: 3px 20px;
+  padding: 3px 20px 3px 0;
 }
 .lot-card__characteristics td:first-of-type {
   font-weight: 400;
@@ -2445,7 +2469,7 @@ input[type=radio].visually-hidden {
 }
 .lot-card__documents .title {
   font-size: 26px;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
 }
 .lot-card__label {
   font-family: var(--font-family);
@@ -2467,7 +2491,17 @@ input[type=radio].visually-hidden {
   color: var(--graphite);
   margin-bottom: 31px;
 }
+.lot-card__contacts-info {
+  margin-bottom: 27px;
+}
+.lot-card__description {
+  margin-bottom: 27px;
+}
+.lot-card__get-bet {
+  margin-bottom: 33px;
+}
 .lot-card__slider {
+  margin-bottom: 40px;
   height: 480px;
 }
 .lot-card__slider .swiper {
@@ -2481,10 +2515,12 @@ input[type=radio].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .lot-card__slider .swiper-slide a {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .lot-card__slider .swiper-slide img {
   display: block;
@@ -2493,9 +2529,67 @@ input[type=radio].visually-hidden {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.lot-card__footer .title {
+  font-size: 32px;
+}
 @media (max-width: 1152px) {
   .lot-card {
     border-radius: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .lot-card__body-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lot-card__body-col--right {
+    order: -1;
+  }
+}
+@media (max-width: 767px) {
+  .lot-card {
+    padding-bottom: 40px;
+  }
+  .lot-card__header-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .lot-card__header-grid .end-counter {
+    margin-bottom: 13px;
+  }
+  .lot-card__header {
+    margin-bottom: 22px;
+  }
+  .lot-card__slider {
+    height: 280px;
+    margin-bottom: 25px;
+  }
+  .lot-card__label {
+    font-size: 14px;
+  }
+  .lot-card__leader-price {
+    margin-bottom: 13px;
+  }
+  .lot-card__get-bet {
+    margin-bottom: 25px;
+  }
+  .lot-card__characteristics td {
+    padding-right: 16px;
+  }
+  .lot-card .sticky {
+    position: initial;
+  }
+  .lot-card__description {
+    margin-bottom: 12px;
+  }
+  .lot-card__damage-map .title {
+    font-size: 20px;
+    margin-bottom: 29px;
+  }
+  .lot-card__documents .title {
+    font-size: 20px;
+  }
+  .lot-card__footer .title {
+    font-size: 25px;
   }
 }
 

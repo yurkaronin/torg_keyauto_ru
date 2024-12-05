@@ -1,18 +1,22 @@
 .data-table {
   font-size: 16px;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: auto;
   border: 1px solid var(--light-grey);
+  max-width: 100%;
+  width: 100%;
 
   table {
     border-collapse: collapse;
   }
+
   table {
     width: 100%;
     border-collapse: collapse;
   }
 
-  th, td {
+  th,
+  td {
     padding: 15px 10px;
     text-align: left;
     border-top: 1px solid #d9d9d9;
@@ -41,5 +45,16 @@
     background-color: var(--graphite);
     color: var(--white);
     // border: 1px solid var(--graphite);
+  }
+
+  @media (max-width: 650px) {
+    table {
+      width: max-content !important;
+    }
+
+    th,
+    td {
+      padding: 12px 10px;
+    }
   }
 }
