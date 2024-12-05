@@ -1,0 +1,38 @@
+.personal-account {
+  background-color: var(--graphite);
+  background-image: url(../img/background-decorate2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 0;
+
+  &__content {
+    padding: 0;
+  }
+
+  .header {
+    max-width: 1424px;
+  }
+
+  .header-desktop-navigation__list {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .main {
+    max-width: 1424px;
+  }
+
+  .footer {
+    max-width: 1424px;
+  }
+
+  @media (max-width: 1023px) {
+    .header-desktop-navigation__list {
+      gap: 20px;
+    }
+
+    .header-desktop-navigation__link {
+      font-size: 12px;
+    }
+  }
+}
