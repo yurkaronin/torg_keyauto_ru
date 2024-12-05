@@ -102,6 +102,9 @@
     margin-top: 0;
     margin-bottom: 6px;
   }
+  &__leader {
+    margin-bottom: 21px;
+  }
 
 
   &__leader-price {
@@ -112,7 +115,10 @@
     font-size: 32px;
     line-height: 125%;
     color: var(--graphite);
-    margin-bottom: 31px;
+    margin-bottom: 6px;
+  }
+  &__leader-text {
+    margin: 0;
   }
 
   &__contacts-info {

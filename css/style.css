@@ -2481,6 +2481,9 @@ input[type=radio].visually-hidden {
   margin-top: 0;
   margin-bottom: 6px;
 }
+.lot-card__leader {
+  margin-bottom: 21px;
+}
 .lot-card__leader-price {
   display: block;
   margin: 0;
@@ -2489,7 +2492,10 @@ input[type=radio].visually-hidden {
   font-size: 32px;
   line-height: 125%;
   color: var(--graphite);
-  margin-bottom: 31px;
+  margin-bottom: 6px;
+}
+.lot-card__leader-text {
+  margin: 0;
 }
 .lot-card__contacts-info {
   margin-bottom: 27px;
@@ -2595,7 +2601,7 @@ input[type=radio].visually-hidden {
 
 .inner-page {
   background-color: var(--graphite);
-  background-image: url(../img/background-decorate.svg);
+  background-image: url(../img/background-decorate2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
