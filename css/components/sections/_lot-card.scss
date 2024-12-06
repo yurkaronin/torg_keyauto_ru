@@ -192,6 +192,12 @@
     }
   }
 
+  .swiper-pagination {
+    bottom: 0;
+    right: 2px;
+    left: auto;
+  }
+
   @media (max-width: 1152px) {
     border-radius: 0;
 

@@ -11,15 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".js-lot-card-slider .swiper-button-next",
         prevEl: ".js-lot-card-slider .swiper-button-prev",
       },
-      // breakpoints: {
-      //   550: {
-      //     slidesPerView: 1.5,
-      //   },
-      //   320: {
-      //     slidesPerView: 1,
-      //   },
-
-      // }
+      pagination: {
+        el: ".js-lot-card-slider .swiper-pagination",
+        type: "fraction",
+      },
 
     });
 

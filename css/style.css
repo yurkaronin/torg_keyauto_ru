@@ -2446,6 +2446,33 @@ input[type=radio].visually-hidden {
   }
 }
 
+.swiper-pagination {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: 100%;
+  padding: 16px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--graphite);
+  opacity: 0.7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: -2px;
+}
+.swiper-pagination:hover {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .swiper-pagination {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+
 .custom-select-group {
   display: grid;
   gap: 10px 16px;
@@ -3193,6 +3220,11 @@ input[type=radio].visually-hidden {
 }
 .lot-card__footer .title {
   font-size: 32px;
+}
+.lot-card .swiper-pagination {
+  bottom: 0;
+  right: 2px;
+  left: auto;
 }
 @media (max-width: 1152px) {
   .lot-card {
