@@ -2497,7 +2497,7 @@ input[type=radio].visually-hidden {
   border: 1px solid var(--anthracite-red);
   border-radius: 8px;
   padding: 10px;
-  padding-inline: var(--inner-padding);
+  padding-inline: 24px;
   min-height: 48px;
   background-color: var(--anthracite-red);
   position: relative;
@@ -2544,12 +2544,20 @@ input[type=radio].visually-hidden {
   }
   .mobile-nav-accordion__body {
     padding: 10px 0;
-    padding-inline: var(--inner-padding);
+    padding-inline: 24px;
     display: none;
     padding-bottom: 24px;
   }
   .mobile-nav-accordion.isActive .mobile-nav-accordion__body {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-nav-accordion__head {
+    padding-inline: 20px;
+  }
+  .mobile-nav-accordion__body {
+    padding-inline: 20px;
   }
 }
 

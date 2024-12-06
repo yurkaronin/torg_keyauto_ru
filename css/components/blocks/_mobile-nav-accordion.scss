@@ -12,7 +12,7 @@
     border: 1px solid var(--anthracite-red);
     border-radius: 8px;
     padding: 10px;
-    padding-inline: var(--inner-padding);
+    padding-inline: 24px;
     min-height: 48px;
     background-color: var(--anthracite-red);
     position: relative;
@@ -54,7 +54,7 @@
 
     &__body {
       padding: 10px 0;
-      padding-inline: var(--inner-padding);
+      padding-inline: 24px;
       display: none;
       padding-bottom: 24px;
     }
@@ -62,4 +62,14 @@
       display: block;
     }
   }
+
+  @media (max-width: 767px) {
+    &__head {
+      padding-inline: 20px;
+    }
+    &__body {
+      padding-inline: 20px;
+    }
+  }
+
 }
