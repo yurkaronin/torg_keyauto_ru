@@ -137,11 +137,10 @@
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
-    // background-color: gray;
 
     .swiper {
       width: 640px;
-      height: 480px;
+      height: 490px;
       overflow: visible;
       padding-top: 10px;
     }
@@ -171,8 +170,6 @@
         display: block;
         width: 100%;
         height: 100%;
-
-
       }
       img {
         display: block;
@@ -185,9 +182,7 @@
       &:hover {
         height: calc(100% + 10px);
         margin-top: -10px;
-
       }
-
     }
   }
 
@@ -199,6 +194,15 @@
 
   @media (max-width: 1152px) {
     border-radius: 0;
+
+    &__slider {
+      .swiper-button-next {
+        right: 32px;
+      }
+      .swiper-button-prev {
+        left: 32px;
+      }
+    }
   }
 
   @media (max-width: 1023px) {
@@ -209,6 +213,14 @@
     &__body-col--right {
       order: -1;
       // margin-bottom: 10px;
+    }
+    &__slider {
+      .swiper-button-next {
+        right: 24px;
+      }
+      .swiper-button-prev {
+        left: 24px;
+      }
     }
   }
 
@@ -268,6 +280,19 @@
     }
     &__footer .title {
       font-size: 25px;
+    }
+    &__slider {
+      .swiper {
+        width: 100%;
+        height: 280px;
+        padding-top: 0;
+      }
+      .swiper-slide {
+        &:hover {
+          height: 100%;
+          margin-top: 0;
+        }
+      }
     }
   }
 }
