@@ -106,7 +106,6 @@
     margin-bottom: 21px;
   }
 
-
   &__leader-price {
     display: block;
     margin: 0;
@@ -135,34 +134,60 @@
 
   &__slider {
     margin-bottom: 40px;
-    height: 480px;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    // background-color: gray;
 
     .swiper {
-      width: 100%;
-      height: 100%;
+      width: 640px;
+      height: 480px;
+      overflow: visible;
+      padding-top: 10px;
+    }
+    .swiper-wrapper {
+      overflow: visible;
+    }
+    .swiper-button-next {
+      right: 56px;
+    }
+    .swiper-button-prev {
+      left: 56px;
     }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background-color: gray;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-    }
-
-    .swiper-slide a {
-      display: block;
+      border-right: 1px solid #ffffff;
       width: 100%;
       height: 100%;
-    }
+      position: relative;
+      transition: all 0.3s;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        height: calc(100% + 10px);
+        margin-top: -10px;
+
+      }
+
     }
   }
 
@@ -243,8 +268,6 @@
     }
     &__footer .title {
       font-size: 25px;
-  }
-
-
+    }
   }
 }

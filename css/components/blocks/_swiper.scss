@@ -1,0 +1,53 @@
+.swiper-button {
+  border-radius: 50%;
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  color: var(--graphite);
+  transition: all 0.3s;
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    transition: all 0.3s;
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 50%;
+    background-color: var(--white-07);
+  }
+
+  svg {
+    position: absolute;
+    display: block;
+    flex-shrink: 0;
+    pointer-events: none;
+    width: 24px;
+    height: auto;
+  }
+
+  // Наведение
+  &:hover {
+    color: var(--white);
+
+    &::before {
+      top: -4px;
+      bottom: -4px;
+      right: -4px;
+      left: -4px;
+      background-color: var(--red);
+    }
+  }
+
+
+}

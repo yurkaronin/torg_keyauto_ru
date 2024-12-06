@@ -4,22 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var swiper = new Swiper(".js-lot-card-slider .swiper", {
       loop: true,
-      // slidesPerView: 1.5,
-      spaceBetween: 1,
+      slidesPerView: 1,
+      spaceBetween: 0,
       centeredSlides: true,
       navigation: {
         nextEl: ".js-lot-card-slider .swiper-button-next",
         prevEl: ".js-lot-card-slider .swiper-button-prev",
       },
-      breakpoints: {
-        550: {
-          slidesPerView: 1.5,
-        },
-        320: {
-          slidesPerView: 1,
-        },
+      // breakpoints: {
+      //   550: {
+      //     slidesPerView: 1.5,
+      //   },
+      //   320: {
+      //     slidesPerView: 1,
+      //   },
 
-      }
+      // }
 
     });
 
