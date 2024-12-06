@@ -21,6 +21,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.cust {
+  transition: all 0.3s;
+}
+
 
 @media (max-width: 767px) {
   .mobile-full {

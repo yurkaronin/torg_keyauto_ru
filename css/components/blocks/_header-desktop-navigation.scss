@@ -30,6 +30,9 @@
       opacity: 0;
     }
     &:hover {
+      svg .cust {
+        stroke: #a50034;
+      }
       &::after {
         width: 100%;
         opacity: 1;

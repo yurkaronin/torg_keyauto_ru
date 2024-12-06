@@ -491,6 +491,11 @@ input[type=radio].visually-hidden {
   list-style: none;
 }
 
+.cust {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 @media (max-width: 767px) {
   .mobile-full {
     max-width: 100% !important;
@@ -745,6 +750,9 @@ input[type=radio].visually-hidden {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
+}
+.header-desktop-navigation__link:hover svg .cust {
+  stroke: #a50034;
 }
 .header-desktop-navigation__link:hover::after {
   width: 100%;
