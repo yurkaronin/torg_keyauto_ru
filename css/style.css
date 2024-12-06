@@ -797,6 +797,15 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
   color: var(--white);
 }
+.footer-navigation__link:hover svg path[stroke="#fff"] {
+  stroke: #A50034;
+}
+.footer-navigation__link:hover svg path[stroke="#ffffff"] {
+  stroke: #A50034;
+}
+.footer-navigation__link:hover svg path[stroke=white] {
+  stroke: #A50034;
+}
 .footer-navigation__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,8 +821,15 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-.footer-navigation__icon img {
-  display: block;
+.footer-navigation__icon svg {
+  width: 40px;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer-navigation__icon svg path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 767px) {
   .footer-navigation {

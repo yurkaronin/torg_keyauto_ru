@@ -16,6 +16,21 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--white);
+
+    &:hover {
+      svg {
+
+        path[stroke="#fff"] {
+          stroke: #A50034;
+        }
+        path[stroke="#ffffff"] {
+          stroke: #A50034;
+        }
+        path[stroke="white"] {
+          stroke: #A50034;
+        }
+      }
+    }
   }
   &__icon {
     display: flex;
@@ -25,8 +40,13 @@
     height: 40px;
     margin: 0 auto;
     margin-bottom: 10px;
-    img {
-      display: block;
+    svg {
+      width: 40px;
+      height: auto;
+      transition: all 0.3s;
+      path {
+        transition: all 0.3s;
+      }
     }
   }
 
@@ -37,6 +57,5 @@
       justify-content: center;
       grid-template-columns: repeat(2, 1fr);
     }
-
   }
 }
