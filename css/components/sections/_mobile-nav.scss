@@ -34,6 +34,10 @@
     position: relative;
     align-items: center;
     transition: all 0.3s;
+
+    svg path {
+      transition: all 0.3s;
+    }
     &::before {
       content: "";
       display: block;
@@ -63,6 +67,19 @@
     &:hover,
     &:active,
     &:focus {
+      svg {
+        path[stroke="#A50034"] {
+          stroke: #ffffff;
+        }
+
+        path[stroke="#fff"] {
+          stroke: #212322;
+        }
+        path[stroke="#ffffff"] {
+          stroke: #212322;
+        }
+      }
+
       outline: none;
       background-color: var(--red);
       &::before {
@@ -74,66 +91,12 @@
     }
   }
 
-  &__link:hover,
-  &__link:active,
-  &__link:focus {
-    .icon--sale {
-      background-image: url(../img/mobile-nav/1-active.svg);
-    }
-    .icon--user {
-      background-image: url(../img/mobile-nav/2-active.svg);
-    }
-    .icon--gear {
-      background-image: url(../img/mobile-nav/3-active.svg);
-    }
-    .icon--inform {
-      background-image: url(../img/mobile-nav/4-active.svg);
-    }
-    .icon--support {
-      background-image: url(../img/mobile-nav/5-active.svg);
-    }
-    .icon--exit {
-      background-image: url(../img/mobile-nav/6-active.svg);
-    }
-    /* При наведении меняем цвета */
-    svg path {
-      stroke: #212322; /* Новый цвет для белых частей */
-    }
-
-    svg path[stroke="#A50034"] {
-      stroke: white; /* Новый цвет для фиолетовых частей */
-    }
-  }
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 10px;
-  display: flex;
-  background-image: url(../img/mobile-nav/1.svg);
-  transition: all 0.3s;
-
-  &--sale {
-    background-image: url(../img/mobile-nav/1.svg);
-  }
-  &--user {
-    background-image: url(../img/mobile-nav/2.svg);
-  }
-  &--support {
-    background-image: url(../img/mobile-nav/3.svg);
-  }
-  &--inform {
-    background-image: url(../img/mobile-nav/4.svg);
-  }
-  &--support {
-    background-image: url(../img/mobile-nav/5.svg);
-  }
-  &--exit {
-    background-image: url(../img/mobile-nav/6.svg);
+  &__icon {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    display: flex;
   }
 }

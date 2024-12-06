@@ -134,14 +134,16 @@
 
   &__slider {
     margin-bottom: 40px;
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
 
     .swiper {
       width: 640px;
       height: 490px;
-      overflow: visible;
+      overflow: initial;
       padding-top: 10px;
     }
     .swiper-wrapper {
