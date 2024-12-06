@@ -2881,10 +2881,6 @@ input[type=radio].visually-hidden {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.mobile-nav__link svg path {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
 .mobile-nav__link::before {
   content: "";
   display: block;
@@ -2945,6 +2941,14 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mobile-nav__icon svg {
+  width: 40px;
+  height: auto;
+}
+.mobile-nav__icon path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .showcase__head {
