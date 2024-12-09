@@ -3420,6 +3420,54 @@ input[type=radio].visually-hidden {
   height: calc(100% + 10px);
   margin-top: -10px;
 }
+.lot-card__tabs-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, auto);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.lot-card__tabs-item {
+  line-height: 1;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  padding: 13px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+.lot-card__tabs-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 4px;
+  background-color: var(--red);
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.lot-card__tabs-item.isActive {
+  color: var(--red);
+}
+.lot-card__tabs-item.isActive:after {
+  width: 100%;
+  opacity: 1;
+}
+.lot-card__tabs-content-item {
+  display: none;
+}
+.lot-card__tabs-content-item.isActive {
+  display: block;
+}
 @media (max-width: 1152px) {
   .lot-card {
     border-radius: 0;
