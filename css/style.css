@@ -2681,6 +2681,9 @@ input[type=radio].visually-hidden {
 .personal-account-form {
   margin-top: 56px;
 }
+.personal-account-form--mod {
+  margin-top: 0 !important;
+}
 .personal-account-form__group {
   display: grid;
   gap: 16px;
@@ -2704,6 +2707,10 @@ input[type=radio].visually-hidden {
 }
 .personal-account-form__col label {
   margin-top: 16px;
+}
+.personal-account-form .hidden {
+  opacity: 0;
+  margin: 0;
 }
 .personal-account-form .form-item--short {
   max-width: 50%;
@@ -2811,6 +2818,9 @@ input[type=radio].visually-hidden {
   .personal-account-form__footer-buttons .button {
     max-width: 100%;
     width: 100%;
+  }
+  .personal-account-form .hidden {
+    display: none;
   }
 }
 
