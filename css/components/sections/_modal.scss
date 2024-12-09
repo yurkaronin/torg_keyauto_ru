@@ -1,0 +1,177 @@
+// Служебные стили
+.modal {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--modal-bg);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--dark-grey-medium);
+
+  &__body {
+    position: relative;
+    width: 755px !important;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 37px 56px 56px;
+    background: var(--white);
+    border-radius: 20px;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  &__buttons--solo {
+    max-width: max-content;
+    margin-left: auto;
+
+    .button {
+      max-width: 224px;
+      width: 224px;
+    }
+  }
+  .title {
+    margin-bottom: 18px;
+  }
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 156%;
+
+    a {
+      text-decoration: underline;
+      color: var(--anthracite-red);
+    }
+  }
+  &__mod-text {
+    color: var(--grey);
+  }
+
+  &__close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    display: block;
+    width: max-content;
+    padding: 10px;
+    color: #212322;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+
+    svg {
+      display: block;
+
+      path {
+        stroke: currentColor;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      scale: 1.4;
+      color: #a50034;
+    }
+  }
+
+  &.active {
+    pointer-events: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .form__agree {
+    grid-column: span 1;
+    margin-right: -120px;
+  }
+  .form__button {
+    max-width: 224px;
+    margin-left: auto;
+  }
+
+  @media (max-width: 1023px) {
+    .form__agree {
+      grid-column: span 2;
+      margin-right: 0;
+    }
+    .form__button {
+      max-width: 224px;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 950px) {
+    &__body {
+      position: relative;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__body {
+      padding: 17px 25px 25px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 125%;
+      &::before {
+        width: 270px;
+      }
+    }
+    &__close {
+      top: 10px;
+      right: 10px;
+
+      svg {
+        scale: 0.8;
+      }
+    }
+    .form__grid {
+      gap: 16px;
+      grid-template-columns: repeat(1, 1fr);
+      .form__agree {
+        grid-column: span 1;
+        margin-right: 0;
+      }
+      .form__button {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &__buttons--solo {
+      max-width: 100%;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .button {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &__text {
+      margin-bottom: 24px;
+    }
+    .title {
+      margin-bottom: 15px;
+    }
+  }
+}

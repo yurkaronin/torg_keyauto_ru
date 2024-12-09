@@ -34,6 +34,13 @@
 
   // --swiper-navigation-sides-offset: -160px;
 
+  --modal-bg: rgb(6 6 6 / 70%);
+  --modal-icon: #7e5af0;
+  --modal-hover: #c08f53;
+  --modal-text: --text;
+  --modal-body: #333441;
+  --modal-border: var(--white-02);
+
   @media (max-width: 1152px) {
     --inner-padding: 25px;
     --max-width: 100%;

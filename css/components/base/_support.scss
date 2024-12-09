@@ -14,7 +14,6 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
-
 .reset {
   padding: 0;
   margin: 0;
@@ -25,6 +24,33 @@ input[type="radio"].visually-hidden {
   transition: all 0.3s;
 }
 
+.list-reset {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: var(--dark-grey-medium);
+  li {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 30px 1fr;
+  }
+  b {
+    font-weight: 700;
+    color: var(--anthracite-red);
+    display: inline-block;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    li {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 20px 1fr;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .mobile-full {

@@ -25,6 +25,12 @@
   --min-height: 72px;
   --input-height: 56px
   --header-height: 138px;
+  --modal-bg: rgb(6 6 6 / 70%);
+  --modal-icon: #7e5af0;
+  --modal-hover: #c08f53;
+  --modal-text: --text;
+  --modal-body: #333441;
+  --modal-border: var(--white-02);
 }
 @media (max-width: 1152px) {
   :root {
@@ -494,6 +500,35 @@ input[type=radio].visually-hidden {
 .cust {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: var(--dark-grey-medium);
+}
+.list-reset li {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 30px 1fr;
+}
+.list-reset b {
+  font-weight: 700;
+  color: var(--anthracite-red);
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .list-reset {
+    font-size: 16px;
+  }
+  .list-reset li {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 20px 1fr;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3470,6 +3505,176 @@ input[type=radio].visually-hidden {
   .lot-card__iframe-video:hover {
     height: 100%;
     margin-top: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+  inset: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--modal-bg);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--dark-grey-medium);
+}
+.modal__body {
+  position: relative;
+  width: 755px !important;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 37px 56px 56px;
+  background: var(--white);
+  border-radius: 20px;
+}
+.modal__text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.modal__buttons--solo {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+}
+.modal__buttons--solo .button {
+  max-width: 224px;
+  width: 224px;
+}
+.modal .title {
+  margin-bottom: 18px;
+}
+.modal__text {
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 156%;
+}
+.modal__text a {
+  text-decoration: underline;
+  color: var(--anthracite-red);
+}
+.modal__mod-text {
+  color: var(--grey);
+}
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  color: #212322;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.modal__close svg {
+  display: block;
+}
+.modal__close svg path {
+  stroke: currentColor;
+}
+.modal__close:hover, .modal__close:active, .modal__close:focus {
+  scale: 1.4;
+  color: #a50034;
+}
+.modal.active {
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+}
+.modal .form__agree {
+  grid-column: span 1;
+  margin-right: -120px;
+}
+.modal .form__button {
+  max-width: 224px;
+  margin-left: auto;
+}
+@media (max-width: 1023px) {
+  .modal .form__agree {
+    grid-column: span 2;
+    margin-right: 0;
+  }
+  .modal .form__button {
+    max-width: 224px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 950px) {
+  .modal__body {
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .modal__body {
+    padding: 17px 25px 25px;
+  }
+  .modal__title {
+    font-size: 28px;
+    line-height: 125%;
+  }
+  .modal__title::before {
+    width: 270px;
+  }
+  .modal__close {
+    top: 10px;
+    right: 10px;
+  }
+  .modal__close svg {
+    scale: 0.8;
+  }
+  .modal .form__grid {
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .modal .form__grid .form__agree {
+    grid-column: span 1;
+    margin-right: 0;
+  }
+  .modal .form__grid .form__button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .modal__buttons--solo {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal__buttons--solo .button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .modal__text {
+    margin-bottom: 24px;
+  }
+  .modal .title {
+    margin-bottom: 15px;
   }
 }
 
