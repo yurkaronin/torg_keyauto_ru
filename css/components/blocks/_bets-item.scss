@@ -1,16 +1,18 @@
-.story-item {
+.bets-item {
   text-decoration: none;
   display: block;
-  padding: 8px 24px;
+  padding: 8px;
+  padding-right: 24px;
   background: #f2f4f4;
   border: 1px solid var(--light-grey);
   border-radius: 8px;
   font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  color: var(--grey);
   transition: all 0.3s;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--dark-grey-medium);
   min-height: 80px;
 
   &:hover {
@@ -21,14 +23,28 @@
   &__grid {
     display: grid;
     gap: 12px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3fr 2fr 1fr;
     align-items: flex-start;
   }
 
-  &__col {
-  }
-
   &__left {
+    max-width: max-content;
+    margin-right: auto;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 1fr;
+  }
+  &__photo {
+    display: flex;
+    border-radius: 8px;
+    width: 88px;
+    height: 64px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__name {
@@ -47,7 +63,14 @@
   }
 
   &__center {
-    text-align: center;
+    max-width: 170px;
+  }
+  &__details {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--dark-grey-medium);
   }
 
   &__element {
@@ -79,9 +102,21 @@
   @media (max-width: 767px) {
     padding: 20px;
     &__grid {
-      display: grid;
       gap: 0 12px;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr;
+    }
+    &__left {
+      gap: 0;
+      grid-template-columns: 1fr;
+    }
+    &__photo {
+      margin-bottom: 8px;
+    }
+    &__city {
+      margin-bottom: 8px;
+    }
+    &__details {
+      max-width: 100%;
     }
     &__price {
       text-align: left;

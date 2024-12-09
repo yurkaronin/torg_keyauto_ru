@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои ставки</title>
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+  <!-- Стили  -->
+  <link rel="stylesheet" href="./libs/simplebar.css" />
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/style.css?v=3">
+
+
+</head>
+
+<body class="body personal-account">
+
+  <!-- шапка  -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__grid">
+        <!-- Логотип  -->
+        <div class="header__col header-logo">
+          <a href="./index.html" class="header-logo__link">
+            <img src="./img/logo.svg" alt="#" loading="lazy">
+          </a>
+        </div>
+
+        <!-- Навигация  -->
+        <div class="header__col">
+          <nav class="header-desktop-navigation">
+            <ul class="header-desktop-navigation__list">
+              <!-- Торги  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27.4657 22.0353L28.4852 20.2532C28.6726 19.9246 28.5618 19.5055 28.2363 19.3164L22.9399 16.2299C22.6154 16.0408 22.1993 16.1536 22.0119 16.4812L20.9924 18.2633L21.2414 19.2001L20.9018 19.7941L19.9738 20.0454L17.9357 23.6096L18.1846 24.5464L17.845 25.1404L16.917 25.3917L15.8975 27.1738C15.7102 27.5015 15.8219 27.9215 16.1465 28.1106L21.4428 31.1971C21.7683 31.3862 22.1835 31.2743 22.3708 30.9458L23.3903 29.1646L23.1414 28.2269L23.481 27.6338L24.409 27.3825L26.4471 23.8183L26.1982 22.8815L26.5377 22.2875L27.4657 22.0353Z"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" />
+                      <path
+                        d="M24.748 26.7868L25.3365 27.1295C28.8674 29.1869 36.1764 34.2393 37.9418 35.2684C38.9165 35.8367 40.1638 35.4993 40.7268 34.5146C41.2898 33.5307 40.9555 32.2725 39.9809 31.7042C38.2154 30.6751 30.2265 26.8108 26.6956 24.7534L26.1071 24.4106"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" />
+                      <path d="M22.667 20.8223L26.1979 22.8796" stroke="#A50034" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path d="M19.9492 25.5737L23.4801 27.632" stroke="#A50034" stroke-width="2"
+                        stroke-miterlimit="10" />
+                      <path
+                        d="M15.074 37.4482H12.4351C11.4639 37.4482 10.6758 38.2438 10.6758 39.2241V41H27.389V39.2241C27.389 38.2438 26.6009 37.4482 25.6298 37.4482H17.7129"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" />
+                      <path
+                        d="M12.4355 37.4483V35.6724C12.4355 34.6921 13.2237 33.8965 14.1948 33.8965H23.8709C24.8421 33.8965 25.6302 34.6921 25.6302 35.6724V37.4483"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" />
+
+                      <path class="cust" d="M5.96484 10.1118C6.54541 10.5363 7.25351 10.7671 8.03728 10.7671H8.91692"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path class="cust"
+                        d="M2.75977 16.0952V19.1311C2.75977 19.4463 3.05533 19.702 3.4195 19.702H7.3779C7.74208 19.702 8.03764 19.4463 8.03764 19.1311V16.9832"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path class="cust" d="M25.9433 10.1118C25.3627 10.5363 24.6546 10.7671 23.8709 10.7671H22.9912"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path class="cust"
+                        d="M25.9416 5.40952C25.9416 5.40952 24.7198 2.75723 24.4321 2.31593C24.1762 1.92257 23.885 1.67041 23.1303 1.4724C21.9656 1.16694 18.4936 1 15.9532 1C13.4128 1 9.94085 1.16694 8.7762 1.4724C8.02147 1.67041 7.7303 1.92257 7.47432 2.31593C7.18667 2.75723 5.96484 5.40952 5.96484 5.40952"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path class="cust"
+                        d="M29.1487 13.7518V10.7683C29.1487 10.0748 29.0713 9.73297 28.6877 9.24283C28.3051 8.7518 28.035 8.37798 28.035 8.37798L30.3555 7.43944C30.6889 7.30447 30.908 6.9777 30.908 6.61542V5.44068C30.908 4.95053 30.5139 4.55273 30.0283 4.55273H26.5097L24.7504 7.21656H16.8336H7.15752L5.39823 4.55273H1.87965C1.39408 4.55273 1 4.95053 1 5.44068V6.61542C1 6.97859 1.21902 7.30447 1.55241 7.43944L3.87291 8.37798C3.87291 8.37798 3.60288 8.75091 3.21935 9.24283C2.83671 9.73386 2.75929 10.0757 2.75929 10.7683V16.096C2.75929 16.5861 3.15337 16.9839 3.63894 16.9839H16.8336"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path class="cust" d="M21.2315 13.4312H16.8333H10.6758" stroke="white" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <span class="header-desktop-navigation__name">Торги</span>
+                </a>
+              </li>
+              <!-- Личный кабинет  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 30.9977L8.2107 30.7707C8.56304 30.3852 8.89634 30.0216 9.57365 29.7657C10.6462 29.3617 11.6711 29.0386 12.5745 28.7526C13.5328 28.4493 14.3613 28.1888 14.7624 27.9734C15.5469 27.5566 15.8956 27.0495 15.8956 26.3304V23.9789C15.7266 23.8272 15.5802 23.6802 15.4635 23.5424C14.9029 22.887 14.4446 21.1572 14.147 19.74C13.9054 19.5154 13.7363 19.1785 13.6685 18.7721L13.384 17.0295C13.2864 16.4448 13.6209 15.8462 13.8447 15.522C13.7839 15.3472 13.7316 15.1249 13.7316 14.8829C13.7316 14.5796 13.7804 13.2122 14.0054 12.5626C14.1613 12.1145 14.5017 11.6861 14.7755 11.3423C14.8767 11.2149 14.9684 11.1026 15.0279 11.01C15.2421 10.6788 15.7945 10.2689 16.5587 9.75602C16.598 9.6275 16.6515 9.36583 16.6813 9.08679C16.7063 8.85985 16.7563 8.3863 17.2027 8.23694C17.6395 8.09221 17.9657 8.41061 18.1466 8.59355C18.1454 8.51366 18.1299 6.56039 18.7704 6.15978L19.0275 6L19.3643 6.10189C19.7369 6.24546 19.8322 6.61249 19.9631 7.12078C20.0274 7.36624 20.1226 7.73675 20.2143 7.87106C20.4381 8.2022 21.3249 8.98606 21.6165 9.2431L21.7772 9.38667C21.8451 9.42604 22.345 9.64139 22.6747 9.78497C23.4639 10.1254 23.8294 10.2909 24.0139 10.4391C24.0294 10.4507 25.3721 11.5356 25.6494 12.1122C25.7387 12.2998 26.3648 13.754 26.3482 14.3329C26.3398 14.6189 26.2577 15.1573 26.2053 15.4757C26.5065 15.9007 26.7469 16.5606 26.6696 17.0295L26.3839 18.7698C26.3363 19.0639 26.2327 19.3255 26.0815 19.5363C25.7828 21.0137 25.3114 22.8535 24.7221 23.5424C24.5579 23.7346 24.346 23.9407 24.0996 24.1468V26.3293C24.0996 27.0483 24.4484 27.5543 25.2316 27.9711C25.634 28.1865 26.4625 28.447 27.4219 28.7503C28.3254 29.0363 29.3503 29.3593 30.4228 29.7634C31.1001 30.0193 31.4334 30.3829 31.7893 30.7731L32 31"
+                        stroke="#A50034" stroke-width="2" />
+                      <path class="cust"
+                        d="M1 20.0006C1 9.52426 9.52537 1 20.0019 1C30.477 1 39 9.52405 39 20.0006C39 30.4759 30.477 39 20.0019 39C9.52533 39 1 30.4757 1 20.0006Z"
+                        stroke="white" stroke-width="2" />
+                    </svg>
+
+                  </span>
+                  <span class="header-desktop-navigation__name">Личный кабинет</span>
+                </a>
+              </li>
+              <!-- Админка аукциона  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="cust"
+                        d="M41 24.0476V17.9524L35.7391 17.1905C35.38 15.7962 34.8305 14.4809 34.1162 13.2714L37.2971 9.01334L32.9867 4.70382L28.7286 7.88477C27.5181 7.17048 26.2038 6.6219 24.8095 6.2619L24.0476 1H17.9524L17.1905 6.26095C15.7962 6.62 14.481 7.16952 13.2714 7.88381L9.01333 4.70286L4.70379 9.01238L7.88477 13.2705C7.17048 14.481 6.62193 15.7952 6.26193 17.1895L1 17.9524V24.0476L6.26094 24.8095C6.61999 26.2038 7.1686 27.5191 7.88384 28.7286L4.70286 32.9867L9.0124 37.2962L13.2704 34.1152C14.4809 34.8295 15.7953 35.3781 17.1895 35.7381L17.9514 40.999H24.0466L24.8086 35.7381C26.2029 35.3791 27.5181 34.8295 28.7276 34.1152L32.9857 37.2962L37.2962 32.9867L34.1152 28.7286C34.8295 27.5181 35.3781 26.2038 35.7381 24.8095L41 24.0476Z"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M21 26C23.7614 26 26 23.7614 26 21C26 18.2386 23.7614 16 21 16C18.2386 16 16 18.2386 16 21C16 23.7614 18.2386 26 21 26Z"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M21 30C25.9706 30 30 25.9706 30 21C30 16.0294 25.9706 12 21 12C16.0294 12 12 16.0294 12 21C12 25.9706 16.0294 30 21 30Z"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <span class="header-desktop-navigation__name">Админка аукциона</span>
+                </a>
+              </li>
+              <!-- Выход  -->
+              <li class="header-desktop-navigation__item">
+                <a href="#" class="header-desktop-navigation__link">
+                  <span class="header-desktop-navigation__icon">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="cust" d="M16 37H28V24" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path class="cust" d="M28 16V5H16" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path class="cust" d="M1 36L15 41H16V1H15L1 6V36Z" stroke="white" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M32 29L41 20L32 11" stroke="#A50034" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M40 20H21" stroke="#A50034" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path d="M12 18V22" stroke="#A50034" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <span class="header-desktop-navigation__name">Выход</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Кнопка показа мобильного меню  -->
+          <button class="menu-button js-menu-button-mobile" title="Открыть мобильное меню" type="button">
+            <span class="menu-button__border"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильное меню  -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <!-- Торги  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42">
+              <path stroke="#A50034" stroke-miterlimit="10" stroke-width="2"
+                d="m27.466 22.035 1.02-1.782a.689.689 0 0 0-.25-.936L22.94 16.23a.677.677 0 0 0-.928.251l-1.02 1.782.25.937-.34.594-.928.252-2.038 3.564.249.937-.34.593-.928.252-1.02 1.782a.69.69 0 0 0 .25.937l5.296 3.086c.325.19.74.077.928-.251l1.02-1.781-.25-.938.34-.593.928-.251 2.038-3.565-.249-.936.34-.595.928-.252Z" />
+              <path stroke="#A50034" stroke-miterlimit="10" stroke-width="2"
+                d="m24.748 26.787.588.343c3.531 2.057 10.84 7.11 12.606 8.138a2.028 2.028 0 0 0 2.785-.754 2.068 2.068 0 0 0-.746-2.81c-1.766-1.029-9.755-4.893-13.285-6.95l-.589-.343m-3.44-3.589 3.53 2.058m-6.247 2.694 3.53 2.058m-8.406 9.816h-2.639a1.77 1.77 0 0 0-1.76 1.776V41H27.39v-1.776c0-.98-.788-1.776-1.76-1.776h-7.916" />
+              <path stroke="#A50034" stroke-miterlimit="10" stroke-width="2"
+                d="M12.435 37.448v-1.776c0-.98.789-1.775 1.76-1.775h9.676c.971 0 1.76.795 1.76 1.775v1.776" />
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M5.965 10.112c.58.425 1.289.655 2.072.655h.88M2.76 16.095v3.036c0 .315.295.57.66.57h3.958c.364 0 .66-.255.66-.57v-2.148m17.905-6.871a3.466 3.466 0 0 1-2.072.655h-.88m2.951-5.357s-1.222-2.653-1.51-3.094c-.256-.393-.547-.646-1.302-.844C21.966 1.167 18.494 1 15.953 1c-2.54 0-6.012.167-7.177.472-.755.198-1.046.45-1.302.844-.287.441-1.51 3.094-1.51 3.094" />
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M29.149 13.752v-2.984c0-.693-.078-1.035-.461-1.525a33.216 33.216 0 0 1-.653-.865l2.32-.939a.889.889 0 0 0 .553-.824V5.441a.884.884 0 0 0-.88-.888H26.51l-1.76 2.663H7.158l-1.76-2.663H1.88A.884.884 0 0 0 1 5.44v1.174c0 .364.219.69.552.824l2.32.939s-.27.373-.653.865c-.382.49-.46.833-.46 1.525v5.328c0 .49.394.888.88.888h13.195m4.398-3.552H10.675" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Торги</span>
+        </a>
+      </li>
+      <!-- Личный кабинет  -->
+      <li class="mobile-nav__item">
+
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+              <path stroke="#A50034" stroke-width="2"
+                d="m8 30.998.21-.227c.353-.386.686-.75 1.364-1.005 1.072-.404 2.097-.727 3-1.013.959-.304 1.787-.564 2.188-.78.785-.416 1.134-.924 1.134-1.643v-2.35a4.581 4.581 0 0 1-.433-.437c-.56-.655-1.018-2.385-1.316-3.802-.242-.225-.41-.561-.479-.968l-.284-1.742c-.098-.585.237-1.184.46-1.508a1.967 1.967 0 0 1-.112-.64c0-.302.048-1.67.273-2.32.156-.447.497-.876.77-1.22.102-.127.193-.24.253-.332.214-.331.766-.741 1.53-1.254.04-.129.093-.39.123-.67.025-.226.075-.7.522-.85.437-.144.763.175.944.358-.002-.08-.017-2.034.623-2.434l.258-.16.336.102c.373.143.468.51.6 1.019.063.245.159.616.25.75.224.331 1.11 1.115 1.402 1.372l.161.144c.068.039.568.254.898.398.789.34 1.154.506 1.339.654.015.012 1.358 1.097 1.635 1.673.09.188.716 1.642.7 2.22-.01.287-.091.825-.144 1.144.302.425.542 1.085.465 1.553l-.286 1.74a1.804 1.804 0 0 1-.303.767c-.298 1.478-.77 3.317-1.359 4.006a5.297 5.297 0 0 1-.622.605v2.182c0 .72.348 1.225 1.132 1.642.402.215 1.23.476 2.19.78.903.285 1.928.608 3 1.012.678.256 1.011.62 1.367 1.01L32 31" />
+              <path stroke="#fff" stroke-width="2"
+                d="M1 20C1 9.525 9.525 1 20.002 1 30.477 1 39 9.524 39 20s-8.523 19-18.998 19C9.525 39 1 30.476 1 20Z" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Личный кабинет</span>
+        </a>
+      </li>
+      <!-- Админка аукциона  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42">
+              <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M16 37h12V24m0-8V5H16M1 36l14 5h1V1h-1L1 6v30Z" />
+              <path stroke="#A50034" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="m32 29 9-9-9-9m8 9H21m-9-2v4" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Админка аукциона</span>
+        </a>
+      </li>
+      <!-- Как это работает?  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 38">
+              <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                d="M35.783 10V1H1v36h34.783v-6M1 7h34.783M4 4h2m2 0h2m2 0h2" />
+              <path stroke="#A50034" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M17.521 12h20A3.47 3.47 0 0 1 41 15.46v9.674a3.47 3.47 0 0 1-3.478 3.46H24.478l-4.603 4.58c-.548.544-1.484.159-1.484-.612v-3.967h-.87a3.47 3.47 0 0 1-3.478-3.46V15.46A3.47 3.47 0 0 1 17.521 12Z" />
+              <path stroke="#A50034" stroke-miterlimit="10" stroke-width="2"
+                d="M27.957 24.286V26m-2.535-7.751c0-1.524 1.025-2.535 2.572-2.535 1.515 0 2.572 1.043 2.572 2.535 0 .874-.645 1.835-1.287 2.34-1.052.829-1.248 1.512-1.248 2.84" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Как это работает?</span>
+        </a>
+      </li>
+      <!-- Техподдержка  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 42">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M41 24.048v-6.096l-5.26-.762a15.11 15.11 0 0 0-1.624-3.919l3.181-4.258-4.31-4.31-4.258 3.182a15.157 15.157 0 0 0-3.92-1.623L24.049 1h-6.096l-.762 5.261a15.11 15.11 0 0 0-3.919 1.623L9.013 4.703l-4.31 4.31 3.182 4.258a15.156 15.156 0 0 0-1.623 3.918L1 17.953v6.096l5.26.762c.36 1.394.909 2.71 1.624 3.919l-3.181 4.258 4.31 4.31 4.257-3.182a15.158 15.158 0 0 0 3.92 1.623L17.95 41h6.096l.762-5.26a15.107 15.107 0 0 0 3.919-1.624l4.258 3.181 4.31-4.31-3.18-4.257a15.156 15.156 0 0 0 1.622-3.92L41 24.049Z" />
+              <path stroke="#A50034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                stroke-width="2" d="M21 26a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+              <path stroke="#A50034" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                stroke-width="2" d="M21 30a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Техподдержка</span>
+        </a>
+      </li>
+      <!-- Выход  -->
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">
+          <span class="mobile-nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 40">
+              <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M14.414 33.698c.342-.338.693-.883 1.789-.883h13.166c.994 0 6.462-5.417 7.157-6.187.668-.74 3.647-5.162 4.473-7.07-.519-.69-1.92-1.263-3.578-.883-1.582.363-2.513 1.484-3.579 3.535l-3.896 1.998" />
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M19.528 27.512h8.052c3.578 0 3.578-4.419 0-4.419h-5.368c-.745 0-2.144-1.767-3.325-1.767h-4.473c-1.21 0-2.71.968-3.579 1.767-1.34 1.325-3.64 3.474-3.64 3.474" />
+              <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="m10.84 39 4.474-4.419-9.84-9.72L1 29.279 10.84 39Zm-5.373-9.72 1.79 1.767" />
+              <path stroke="#A50034" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M32.947 9.837c0-.332-.031-.656-.076-.976l1.74-1.605-2.147-3.674-2.276.686a7.163 7.163 0 0 0-1.714-.982L27.937 1h-4.295l-.536 2.286c-.62.249-1.195.58-1.714.982l-2.276-.686-2.148 3.674 1.74 1.605c-.044.32-.076.644-.076.976 0 .333.032.657.076.977l-1.74 1.605 2.148 3.674 2.276-.686c.52.4 1.094.733 1.714.982l.536 2.286h4.295l.537-2.287a7.163 7.163 0 0 0 1.714-.981l2.276.686 2.147-3.674-1.74-1.605c.045-.32.076-.644.076-.977Z" />
+              <path stroke="#A50034" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                d="M25.79 12.489c1.482 0 2.684-1.187 2.684-2.652 0-1.464-1.202-2.65-2.684-2.65-1.482 0-2.684 1.186-2.684 2.65 0 1.465 1.202 2.652 2.684 2.652Z" />
+            </svg>
+
+          </span>
+          <span class="mobile-nav__item-name">Выход</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- основной контент  -->
+  <main class="main">
+
+    <!-- Панель управления кабинетом  -->
+    <section class="section control-panel">
+      <div class="wrapper">
+        <div class="control-panel__grid">
+          <!-- боковая панель  -->
+          <aside class="control-panel__aside">
+            <div class="mobile-nav-accordion">
+              <div class="mobile-nav-accordion__head">
+                <span class="mobile-nav-accordion__head-name">Мои ставки</span>
+                <span class="mobile-nav-accordion__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 4">
+                    <circle cx="2" cy="2" r="2" fill="#fff" />
+                    <circle cx="10" cy="2" r="2" fill="#fff" />
+                    <circle cx="18" cy="2" r="2" fill="#fff" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mobile-nav-accordion__body">
+                <div class="personal-navigation">
+
+                  <div class="personal-navigation__group">
+                    <ul class="personal-navigation__list">
+                      <li class="personal-navigation__item">
+                        <a class="personal-navigation__link current">
+                          <span>Мои ставки</span>
+                          <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="personal-navigation__item">
+                        <a href="#" class="personal-navigation__link">
+                          <span>История покупок</span>
+                          <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="personal-navigation__item">
+                        <a href="#" class="personal-navigation__link">
+                          <span>Профиль</span>
+                          <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </aside>
+          <!-- текущая информация вкладки  -->
+          <div class="control-panel__content">
+            <h1 class="title">Мои ставки</h1>
+
+            <div class="user-history">
+              <div class="user-history__list">
+
+                <a href="#" class="story-item">
+                  <div class="story-item__grid">
+                    <div class="story-item__col story-item__left">
+                      <span class="story-item__name">Alfa Romeo GTV</span>
+                      <span class="story-item__city">Сочи</span>
+                    </div>
+                    <div class="story-item__col story-item__center">
+                      <span class="story-item__element">0.0</span>
+                    </div>
+                    <div class="story-item__col story-item__right">
+                      <span class="story-item__price">370 000 ₽
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="story-item">
+                  <div class="story-item__grid">
+                    <div class="story-item__col story-item__left">
+                      <span class="story-item__name">Alfa Romeo GTV</span>
+                      <span class="story-item__city">Сочи</span>
+                    </div>
+                    <div class="story-item__col story-item__center">
+                      <span class="story-item__element">0.0</span>
+                    </div>
+                    <div class="story-item__col story-item__right">
+                      <span class="story-item__price">370 000 ₽
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="bets-item">
+                  <div class="bets-item__grid">
+                    <div class="bets-item__col bets-item__left">
+                      <div class="bets-item__photo">
+                        <img src="./img/bets-item/1.jpg" alt="#" loading="lazy">
+                      </div>
+                      <div class="bets-item__left-group">
+                        <span class="bets-item__name">BMW 5 1998</span>
+                        <span class="bets-item__city">Сочи</span>
+                      </div>
+
+                    </div>
+                    <div class="bets-item__col bets-item__center">
+                      <p class="bets-item__details">1.6 МТ (115 л.с.), бензин, передний, седан, синий</p>
+                    </div>
+                    <div class="bets-item__col bets-item__right">
+                      <span class="bets-item__price">1 520 000 ₽</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="bets-item">
+                  <div class="bets-item__grid">
+                    <div class="bets-item__col bets-item__left">
+                      <div class="bets-item__photo">
+                        <img src="./img/bets-item/2.jpg" alt="#" loading="lazy">
+                      </div>
+                      <div class="bets-item__left-group">
+                        <span class="bets-item__name">Infiniti JX 2013</span>
+                        <span class="bets-item__city">Сочи</span>
+                      </div>
+
+                    </div>
+                    <div class="bets-item__col bets-item__center">
+                      <p class="bets-item__details">1.8 Вариатор (160 л.с.), бензин, передний, седан, красный, </p>
+                    </div>
+                    <div class="bets-item__col bets-item__right">
+                      <span class="bets-item__price">980 000 ₽</span>
+                    </div>
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Подвал  -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <!-- Как это работает  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 42 38">
+                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                        d="M35.783 10V1H1v36h34.783v-6M1 7h34.783M4 4h2m2 0h2m2 0h2" />
+                      <path stroke="#A50034" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                        d="M17.521 12h20A3.47 3.47 0 0 1 41 15.46v9.674a3.47 3.47 0 0 1-3.478 3.46H24.478l-4.603 4.58c-.548.544-1.484.159-1.484-.612v-3.967h-.87a3.47 3.47 0 0 1-3.478-3.46V15.46A3.47 3.47 0 0 1 17.521 12Z" />
+                      <path stroke="#A50034" stroke-miterlimit="10" stroke-width="2"
+                        d="M27.957 24.286V26m-2.535-7.751c0-1.524 1.025-2.535 2.572-2.535 1.515 0 2.572 1.043 2.572 2.535 0 .874-.645 1.835-1.287 2.34-1.052.829-1.248 1.512-1.248 2.84" />
+                    </svg>
+
+                  </span>
+                  <span class="footer-navigation__name">Как это работает</span>
+                </a>
+              </li>
+              <!-- Техподдержка  -->
+              <li class="footer-navigation__item">
+                <a href="#" class="footer-navigation__link">
+                  <span class="footer-navigation__icon">
+                    <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.4137 33.6982C14.7564 33.3598 15.1071 32.8145 16.203 32.8145C17.2981 32.8145 28.2737 32.8145 29.3688 32.8145C30.3628 32.8145 35.8309 27.3981 36.526 26.6284C37.1943 25.8878 40.1735 21.4665 40.9993 19.5585C40.4804 18.8683 39.0785 18.2947 37.4207 18.6747C35.8389 19.0379 34.9085 20.1594 33.8421 22.2097L29.9458 24.2078"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M19.5278 27.5121C19.5278 27.5121 26.6851 27.5121 27.5797 27.5121C31.1583 27.5121 31.1583 23.0934 27.5797 23.0934C26.6851 23.0934 24.6998 23.0934 22.2118 23.0934C21.4665 23.0934 20.0682 21.3259 18.8872 21.3259C18.3621 21.3259 15.6226 21.3259 14.414 21.3259C13.2044 21.3259 11.7031 22.2945 10.8353 23.0934C9.49424 24.4181 7.19498 26.5674 7.19498 26.5674"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M10.8409 39.0001L15.3141 34.5815L5.4732 24.8607L1 29.2793L10.8409 39.0001Z"
+                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path d="M5.46744 29.2795L7.25675 31.047" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M32.9469 9.83736C32.9469 9.50508 32.9156 9.18074 32.8709 8.86083L34.611 7.25598L32.4638 3.58228L30.1878 4.26806C29.668 3.86684 29.0937 3.53456 28.4737 3.28623L27.9369 1H23.6425L23.1057 3.28623C22.4857 3.53456 21.9114 3.86684 21.3916 4.26806L19.1156 3.58228L16.9684 7.25598L18.7085 8.86083C18.6638 9.18074 18.6325 9.50508 18.6325 9.83736C18.6325 10.1696 18.6638 10.494 18.7085 10.8139L16.9684 12.4188L19.1156 16.0925L21.3916 15.4067C21.9114 15.8079 22.4857 16.1402 23.1057 16.3885L23.6425 18.6747H27.9369L28.4737 16.3885C29.0937 16.1402 29.668 15.8079 30.1878 15.4067L32.4638 16.0925L34.611 12.4188L32.8709 10.8139C32.9156 10.494 32.9469 10.1696 32.9469 9.83736Z"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                      <path
+                        d="M25.7901 12.4887C27.2724 12.4887 28.474 11.3017 28.474 9.83749C28.474 8.37327 27.2724 7.18628 25.7901 7.18628C24.3078 7.18628 23.1061 8.37327 23.1061 9.83749C23.1061 11.3017 24.3078 12.4887 25.7901 12.4887Z"
+                        stroke="#A50034" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+
+                  </span>
+                  <span class="footer-navigation__name">Техподдержка</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__copyright">Предложение носит исключительно информационный характер и ни при каких условиях
+            не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской
+            Федерации.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Скрипты  -->
+
+  <!-- ЯКарта  -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
+    type="text/javascript"></script>
+
+  <!-- библиотеки  -->
+  <script src="./libs/fslightbox.min.js"></script>
+  <script src="./libs/SmoothScroll.min.js"></script>
+  <script src="./libs/simplebar.min.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./libs/imask.js"></script>
+
+  <!-- кастомные скрипты  -->
+  <script src="./js/components/custom-select.js"></script>
+  <script src="./js/components/header-sticky.js"></script>
+  <script src="./js/components/mobile-nav-open.js"></script>
+  <script src="./js/components/modals.js"></script>
+  <script src="./js/components/mobile-nav-accordion.js"></script>
+
+  <!-- Слайдеры  -->
+  <!-- <script src="./js/swiper-sliders.js"></script> -->
+
+  <!-- приоритетный файл  -->
+  <script src="./js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
