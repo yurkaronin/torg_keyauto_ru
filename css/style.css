@@ -671,6 +671,7 @@ input[type=radio].visually-hidden {
 
 .main {
   min-height: 100vh;
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -1930,12 +1931,7 @@ input[type=radio].visually-hidden {
   font-weight: 400;
   font-size: 16px;
   color: var(--graphite);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  display: block;
   cursor: pointer;
 }
 .form-check label::before {
@@ -1970,6 +1966,10 @@ input[type=radio].visually-hidden {
 }
 .form-check label:hover::before {
   border: 1px solid var(--graphite);
+}
+.form-check a {
+  text-decoration: underline;
+  color: var(--anthracite-red);
 }
 .form-check input:checked + label::before {
   background-color: var(--anthracite-red);
@@ -2735,6 +2735,42 @@ input[type=radio].visually-hidden {
   max-width: max-content;
   margin-left: auto;
 }
+.personal-account-form__group-mod {
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+.personal-account-form__group-mod .personal-account-form__col:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.personal-account-form__footer-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personal-account-form__footer-buttons {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+}
+.personal-account-form__footer-buttons .button {
+  width: 100%;
+  max-width: 224px;
+}
+@media (max-width: 1023px) {
+  .personal-account-form__footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .personal-account-form__footer-buttons {
+    margin-left: 0;
+  }
+}
 @media (max-width: 767px) {
   .personal-account-form {
     margin-top: 18px;
@@ -2766,6 +2802,15 @@ input[type=radio].visually-hidden {
   }
   .personal-account-form__col label {
     margin-top: 0;
+  }
+  .personal-account-form__footer-buttons {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    gap: 15px;
+  }
+  .personal-account-form__footer-buttons .button {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -3450,6 +3495,11 @@ input[type=radio].visually-hidden {
   padding-top: 56px;
   padding-bottom: 80px;
   border-radius: 20px;
+}
+.authorization .inner-content .contact-form__grid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .authorization .header-desktop-navigation__list {
   grid-template-columns: repeat(2, auto);

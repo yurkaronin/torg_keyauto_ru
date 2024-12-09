@@ -58,6 +58,10 @@
     padding-top: 56px;
     padding-bottom: 80px;
     border-radius: 20px;
+
+    .contact-form__grid {
+      align-items: center;
+    }
   }
   .header-desktop-navigation__list {
     grid-template-columns: repeat(2, auto);

@@ -6,8 +6,8 @@
     font-weight: 400;
     font-size: 16px;
     color: var(--graphite);
-    display: flex;
-    max-width: max-content;
+    display: block;
+    // max-width: max-content;
     cursor: pointer;
 
     &::before {
@@ -44,6 +44,11 @@
         border: 1px solid var(--graphite);
       }
     }
+  }
+
+  a {
+      text-decoration: underline;
+      color: var(--anthracite-red);
   }
 
   input:checked + label::before {
