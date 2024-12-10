@@ -17,7 +17,7 @@
 
   th,
   td {
-    padding: 15px 10px;
+    padding: 15px 24px;
     text-align: left;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -44,7 +44,7 @@
   thead th {
     background-color: var(--graphite);
     color: var(--white);
-    // border: 1px solid var(--graphite);
+    border: 1px solid var(--graphite);
   }
 
   a {
@@ -76,9 +76,9 @@
       width: max-content !important;
     }
 
-    th,
-    td {
-      padding: 12px 10px;
-    }
+    // th,
+    // td {
+    //   padding: 12px 10px;
+    // }
   }
 }

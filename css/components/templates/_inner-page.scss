@@ -9,4 +9,8 @@
   &__content {
     padding: 0;
   }
+
+  @media (max-width: 1152px) {
+    background-image: none;
+  }
 }

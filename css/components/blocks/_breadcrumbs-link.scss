@@ -22,12 +22,13 @@
     height: 8px;
     position: absolute;
     left: 0;
+    // transition: all 0.1s;
   }
   &:hover {
     &::before {
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='42' height='10' viewBox='0 0 42 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M41 5L1 5M1 5L5 1M1 5L5 9' stroke='%23A50034' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
       width: 40px;
-      left: -16px;
+      left: 0;
     }
   }
 }

@@ -84,4 +84,10 @@
       }
     }
   }
+
+  @media (max-width: 767px) {
+    &__name {
+      margin-bottom: 6px;
+    }
+  }
 }

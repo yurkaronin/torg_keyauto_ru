@@ -81,10 +81,14 @@
     &__grid {
       display: grid;
       gap: 0 12px;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr;
+      text-align: left;
     }
     &__price {
       text-align: left;
+    }
+    &__center {
+      text-align-last: left;
     }
   }
 }

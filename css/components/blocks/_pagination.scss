@@ -73,7 +73,7 @@
 
     font-weight: 600;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1 !important;
     color: var(--black);
     span {
       position: relative;
@@ -106,7 +106,7 @@
     &.current-page,
     &:not([href]) {
       color: var(--anthracite-red);
-      pointer-events: none;
+      // pointer-events: none;
       &::before {
         border: 1px solid var(--anthracite-red);
       }
@@ -126,7 +126,7 @@
       grid-template-columns: repeat(5, 1fr);
     }
     &__item--hide {
-      display: none;
+      display: none !important;
     }
     &__button {
       width: 40px;

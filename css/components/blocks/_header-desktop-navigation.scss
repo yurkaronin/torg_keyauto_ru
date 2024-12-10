@@ -51,4 +51,9 @@
       display: block;
     }
   }
+  @media (max-width: 374px) {
+    &__link {
+      font-size: 12px;
+    }
+  }
 }
