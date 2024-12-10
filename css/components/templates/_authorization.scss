@@ -26,37 +26,7 @@
     padding-top: 42px;
     padding-bottom: 30px;
   }
-  // &::before {
-  //   content: "";
-  //   display: block;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background-color: #0000007d;
-  //   position: absolute;
-  // }
 
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   background-color: var(--graphite);
-  //   background-image: url(../img/authorization/background-decorate.svg);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position-x: center;
-  //   background-position-y: 0;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   position: absolute;
-  // }
-
-  // .main {
-  //   position: relative;
-  //   z-index: 5;
-  // }
   .inner-content {
     padding-top: 56px;
     padding-bottom: 80px;
@@ -91,6 +61,10 @@
     .header {
       padding-bottom: 33px;
     }
+  }
+
+  @media (max-width: 920px) {
+    background-image: url(../img/authorization/bg-tablet.jpg);
   }
 
   @media (max-width: 767px) {

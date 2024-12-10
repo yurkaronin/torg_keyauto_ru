@@ -4089,6 +4089,11 @@ input[type=radio].visually-hidden {
     padding-bottom: 33px;
   }
 }
+@media (max-width: 920px) {
+  .authorization {
+    background-image: url(../img/authorization/bg-tablet.jpg);
+  }
+}
 @media (max-width: 767px) {
   .authorization {
     background-image: url(../img/authorization/bg-mob.jpg);
