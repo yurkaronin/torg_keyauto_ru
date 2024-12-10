@@ -5,7 +5,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  // min-height: 100vh;
+  // min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
   position: relative;
 
   &__wrapper {
@@ -91,6 +94,7 @@
   }
 
   @media (max-width: 767px) {
+    background-image: url(../img/authorization/bg-mob.jpg);
     .header-desktop-navigation {
       display: flex;
       justify-content: center;
@@ -112,7 +116,7 @@
 
     .header {
       max-width: 100%;
-      padding-inline: 25px;
+      padding-inline: 0;
       padding-top: 25px;
       padding-bottom: 20px;
     }

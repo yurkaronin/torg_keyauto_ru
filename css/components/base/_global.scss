@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   scrollbar-gutter: stable;
-  scroll-padding-top: var(--header-height);
+  // scroll-padding-top: var(--header-height);
 }
 
 html *,
@@ -20,7 +20,6 @@ body {
   font-style: normal;
   max-width: 100%;
   width: 100%;
-  // min-height: 1000px;
 
   background-color: var(--brand-07);
 

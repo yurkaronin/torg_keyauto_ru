@@ -355,7 +355,6 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   scrollbar-gutter: stable;
-  scroll-padding-top: var(--header-height);
 }
 
 html *,
@@ -1863,7 +1862,7 @@ input[type=radio].visually-hidden {
 }
 
 .form-item {
-  height: 72px;
+  min-height: 70px;
   width: 100%;
   max-width: 100%;
   position: relative;
@@ -3880,7 +3879,8 @@ input[type=radio].visually-hidden {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
   position: relative;
 }
 .authorization__wrapper {
@@ -3943,6 +3943,9 @@ input[type=radio].visually-hidden {
   }
 }
 @media (max-width: 767px) {
+  .authorization {
+    background-image: url(../img/authorization/bg-mob.jpg);
+  }
   .authorization .header-desktop-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3967,7 +3970,7 @@ input[type=radio].visually-hidden {
   }
   .authorization .header {
     max-width: 100%;
-    padding-inline: 25px;
+    padding-inline: 0;
     padding-top: 25px;
     padding-bottom: 20px;
   }
