@@ -4,6 +4,8 @@
   margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 56px;
+  max-width: 100%;
+  overflow-x: hidden;
 
   &__header {
     margin-bottom: 35px;
@@ -183,8 +185,8 @@
       }
 
       &:hover {
-        height: calc(100% + 10px);
-        margin-top: -10px;
+        // height: calc(100% + 10px);
+        // margin-top: -10px;
       }
     }
   }
@@ -214,8 +216,8 @@
     }
 
     &:hover {
-      height: calc(100% + 10px);
-      margin-top: -10px;
+      // height: calc(100% + 10px);
+      // margin-top: -10px;
     }
   }
 

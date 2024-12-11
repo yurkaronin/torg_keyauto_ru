@@ -3577,6 +3577,8 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 56px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .lot-card__header {
   margin-bottom: 35px;
@@ -3744,10 +3746,6 @@ input[type=radio].visually-hidden {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.lot-card__slider .swiper-slide:hover {
-  height: calc(100% + 10px);
-  margin-top: -10px;
-}
 .lot-card__body .button--transparent {
   font-weight: 700;
 }
@@ -3768,10 +3766,6 @@ input[type=radio].visually-hidden {
 .lot-card__iframe-video iframe {
   width: 100%;
   height: 100%;
-}
-.lot-card__iframe-video:hover {
-  height: calc(100% + 10px);
-  margin-top: -10px;
 }
 .lot-card__tabs-grid {
   display: grid;
