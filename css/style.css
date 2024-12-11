@@ -3955,6 +3955,11 @@ input[type=radio].visually-hidden {
   background: var(--white);
   border-radius: 20px;
 }
+.modal__content-scroll {
+  max-height: 70vh;
+  overflow: auto;
+  margin-bottom: 16px;
+}
 .modal__text {
   margin: 0;
   margin-bottom: 40px;
@@ -4332,4 +4337,8 @@ input[type=radio].visually-hidden {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.modal-open {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
