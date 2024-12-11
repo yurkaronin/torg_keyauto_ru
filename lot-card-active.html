@@ -277,76 +277,168 @@
         </div>
       </div>
       <div class="lot-card__body">
-
-        <!-- Слайдер  -->
-        <div class="lot-card__slider js-lot-card-slider">
-          <!-- Swiper -->
-          <div class="swiper">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <!-- Картинка  -->
-                <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
-                  <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
-                </a>
+        <!-- блок с табами в ней и кнопки переключения и сам контент -->
+        <div class="lot-card__tabs js-all-lot-card-tabs">
+          <!-- табы  для переключения конетнта -->
+          <div class="lot-card__tabs-list">
+            <div class="wrapper">
+              <div class="lot-card__tabs-grid">
+                <a class="lot-card__tabs-item isActive" href="#" data-tab="1">Внешний вид</a>
+                <a class="lot-card__tabs-item" href="#" data-tab="2">Повреждения</a>
               </div>
-              <!-- Видео из ВК  -->
-              <div class="swiper-slide">
-                <div class="lot-card__iframe-video">
-                  <iframe src="https://vk.com/video_ext.php?oid=-35898196&id=456243730&hd=2"
-                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
-                    allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="lot-card__tabs-content">
+            <!-- Контентный блок таба  -->
+            <div class="lot-card__tabs-content-item isActive" data-content="1">
+              <!-- Слайдер  -->
+              <div class="lot-card__slider js-lot-card-slider">
+                <!-- Swiper -->
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
+                      </a>
+                    </div>
+                    <!-- Видео из ВК  -->
+                    <div class="swiper-slide">
+                      <div class="lot-card__iframe-video">
+                        <iframe src="https://vk.com/video_ext.php?oid=-35898196&id=456243730&hd=2"
+                          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                          frameborder="0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/2.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/2.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
+                      </a>
+                    </div>
+
+
+                  </div>
+                  <!-- Пагинация  -->
+                  <div class="swiper-pagination"></div>
+
+                </div>
+                <!-- Кнопки навигации  -->
+                <div class="swiper-button swiper-button-next">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5L25 5M25 5L21 1M25 5L21 9" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="swiper-button swiper-button-prev">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5L1 5M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
-
-              <div class="swiper-slide">
-                <!-- Картинка  -->
-                <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
-                  <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <!-- Картинка  -->
-                <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
-                  <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <!-- Картинка  -->
-                <a href="./img/lot-card/photo-slider/2.jpg" data-fslightbox="lot-card-slider">
-                  <img src="./img/lot-card/photo-slider/2.jpg" alt="#">
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <!-- Картинка  -->
-                <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
-                  <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
-                </a>
-              </div>
-
-
             </div>
-            <!-- Пагинация  -->
-            <div class="swiper-pagination"></div>
+            <!-- Контентный блок таба  -->
+            <div class="lot-card__tabs-content-item" data-content="2">
+              <!-- Слайдер  -->
+              <div class="lot-card__slider js-lot-card-slider">
+                <!-- Swiper -->
+                <div class="swiper">
+                  <div class="swiper-wrapper">
 
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
+                      </a>
+                    </div>
+                    <!-- Видео из ВК  -->
+                    <div class="swiper-slide">
+                      <div class="lot-card__iframe-video">
+                        <iframe src="https://vk.com/video_ext.php?oid=-35898196&id=456243730&hd=2"
+                          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                          frameborder="0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/1.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/1.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/2.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/2.jpg" alt="#">
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <!-- Картинка  -->
+                      <a href="./img/lot-card/photo-slider/3.jpg" data-fslightbox="lot-card-slider">
+                        <img src="./img/lot-card/photo-slider/3.jpg" alt="#">
+                      </a>
+                    </div>
+
+
+                  </div>
+                  <!-- Пагинация  -->
+                  <div class="swiper-pagination"></div>
+
+                </div>
+                <!-- Кнопки навигации  -->
+                <div class="swiper-button swiper-button-next">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5L25 5M25 5L21 1M25 5L21 9" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="swiper-button swiper-button-prev">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5L1 5M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Кнопки навигации  -->
-          <div class="swiper-button swiper-button-next">
-            <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 5L25 5M25 5L21 1M25 5L21 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="swiper-button swiper-button-prev">
-            <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M25 5L1 5M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
+
         </div>
+
+
 
         <div class="wrapper">
           <div class="lot-card__body-grid">
@@ -464,24 +556,11 @@
               <div class="sticky">
                 <!-- Текущий лидер  -->
                 <div class="lot-card__leader">
-                  <p class="lot-card__label">Лидирует ставка Леша В., всего 5 ставок</p>
-                  <strong class="lot-card__leader-price">1 385 000 ₽</strong>
+                  <p class="lot-card__label">Стартовая цена:</p>
+                  <strong class="lot-card__leader-price">1 250 000 ₽</strong>
+                  <p class="lot-card__leader-text">Сделать ставку вы можете 23.10.2024 15:35:00</p>
                 </div>
-                <!-- Сделать ставку  -->
-                <div class="lot-card__get-bet">
-                  <div class="get-bet">
-                    <div class="get-bet__grid">
-                      <div class="get-bet__left">
-                        <span class="get-bet__label">Следующая ставка</span>
-                        <b class="get-bet__price">1 390 000 ₽</b>
-                      </div>
-                      <div class="get-bet__right">
-                        <a href="#" class="button button--promo"><span>Сделать ставку</span></a>
-                      </div>
-                    </div>
-                  </div>
 
-                </div>
                 <!-- Контактное лицо:  -->
                 <div class="lot-card__contacts-info">
                   <h2 class="lot-card__label">Контактное лицо:</h2>
@@ -639,6 +718,7 @@
   <script src="./js/components/mobile-nav-open.js"></script>
   <script src="./js/components/modals.js"></script>
   <script src="./js/components/mobile-nav-accordion.js"></script>
+  <script src="./js/components/lot-card-tabs.js"></script>
 
   <!-- Слайдеры  -->
   <script src="./js/components/lot-card-slider.js"></script>

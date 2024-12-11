@@ -2,7 +2,7 @@
   background: var(--white);
   border-radius: 20px 20px 0 0;
   margin: 0 auto;
-  padding-top: 37px;
+  padding-top: 20px;
   padding-bottom: 45px;
   min-height: 75vh;
 
@@ -26,6 +26,9 @@
     max-width: 100%;
     overflow-x: hidden;
   }
+  &__aside {
+    margin-top: 22px;
+  }
 
   @media (max-width: 1152px) {
     border-radius: 0;
@@ -38,7 +41,8 @@
     }
 
     &__aside {
-      margin-bottom: 37px;
+      margin-bottom: 25px;
+      margin-top: 0;
     }
   }
 
@@ -52,12 +56,18 @@
         width: max-content !important;
       }
     }
+    &__content {
+      overflow: initial;
+    }
 
   }
 
   @media (max-width: 768px) {
     &__content .contact-form__buttons {
       grid-template-columns: repeat(1, 1fr);
+    }
+    .control-panel__table {
+
     }
   }
 

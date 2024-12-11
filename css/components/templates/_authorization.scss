@@ -28,8 +28,8 @@
   }
 
   .inner-content {
-    padding-top: 56px;
-    padding-bottom: 80px;
+    padding-top: 38px;
+    padding-bottom: 56px;
     border-radius: 20px;
 
     .contact-form__grid {
@@ -52,6 +52,10 @@
     .inner-content {
       padding-top: 61px;
     }
+    .inner-content {
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
   }
 
   @media (max-width: 1023px) {
@@ -61,6 +65,7 @@
     .header {
       padding-bottom: 33px;
     }
+
   }
 
   @media (max-width: 920px) {
@@ -92,7 +97,7 @@
       max-width: 100%;
       padding-inline: 0;
       padding-top: 25px;
-      padding-bottom: 20px;
+      padding-bottom: 14px;
     }
     .main {
       max-width: 100%;
@@ -105,6 +110,14 @@
     .inner-content {
       padding-top: 17px;
       padding-bottom: 25px;
+    }
+    .title {
+      font-size: 25px;
+    }
+    &__wrapper {
+      align-items: flex-start;
+      min-height: initial;
+      display: block;
     }
   }
 }

@@ -8,7 +8,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 1.5;
   color: var(--grey);
   transition: all 0.3s;
   min-height: 80px;
@@ -37,7 +37,7 @@
     font-family: var(--second-family);
     font-weight: 600;
     font-size: 18px;
-    line-height: 133%;
+    line-height: 1.5;
     color: var(--graphite);
     margin-bottom: 1px;
   }
@@ -55,7 +55,7 @@
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     color: var(--graphite);
   }
 
@@ -71,7 +71,7 @@
     display: block;
     font-weight: 800;
     font-size: 18px;
-    line-height: 222%;
+    line-height: 1.5;
     text-align: right;
     color: var(--graphite);
   }
@@ -89,6 +89,9 @@
     }
     &__center {
       text-align-last: left;
+    }
+    &__city {
+      margin-bottom: 8px;
     }
   }
 }

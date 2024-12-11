@@ -10,10 +10,16 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(7, auto);
-    gap: 16px;
+    flex-wrap: wrap;
+    max-width: max-content;
+    margin-bottom: -16px;
+    margin-right: -16px;
+  }
+  &__item {
+    margin-right: 16px;
+    margin-bottom: 16px;
   }
   &__button {
     border-radius: 50%;
@@ -122,8 +128,13 @@
   @media (max-width: 767px) {
     gap: 12px;
     &__list {
-      gap: 5px;
-      grid-template-columns: repeat(5, 1fr);
+      // gap: 5px;
+      // grid-template-columns: repeat(5, 1fr);
+      margin-right: -5px;
+    }
+    &__item {
+      margin-right: 5px;
+      margin-bottom: 5px;
     }
     &__item--hide {
       display: none !important;

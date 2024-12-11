@@ -1,18 +1,24 @@
 .data-table {
   font-size: 16px;
-  border-radius: 8px;
+  // border-radius: 8px;
   overflow: auto;
-  border: 1px solid var(--light-grey);
+
+  // border-bottom: none;
   max-width: 100%;
   width: 100%;
 
   table {
     border-collapse: collapse;
-  }
-
-  table {
     width: 100%;
-    border-collapse: collapse;
+    border: none;
+  }
+  th {
+    &:first-of-type {
+      border-radius: 8px 0 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 8px 0 0;
+    }
   }
 
   th,
@@ -24,6 +30,7 @@
   }
 
   th {
+    border: none;
     background-color: #f4f4f4;
     font-weight: bold;
   }
@@ -35,6 +42,14 @@
   tr:hover {
     background-color: #f1f1f1;
   }
+  td {
+    &:first-of-type {
+      border-left: 1px solid #d9d9d9;
+    }
+    &:last-of-type {
+      border-right: 1px solid #d9d9d9;
+    }
+  }
 
   b {
     font-weight: 700px;
@@ -44,7 +59,7 @@
   thead th {
     background-color: var(--graphite);
     color: var(--white);
-    border: 1px solid var(--graphite);
+    // border: 1px solid var(--graphite);
   }
 
   a {
@@ -52,23 +67,29 @@
     text-decoration-skip-ink: none;
     color: var(--anthracite-red);
   }
+
+  &--mod {
+    th, td {
+      padding: 15px 20px;
+    }
+  }
   &__id {
-    width: 90px;
+    width: 100px;
   }
   &__name {
-    width: 140px;
+    width: 150px;
   }
   &__list {
     // width: 210px;
   }
   &__actions {
-    width: 130px;
+    width: 140px;
   }
   &__autor {
-    width: 215px;
+    width: 235px;
   }
   &__end {
-    width: 110px;
+    width: 130px;
   }
 
   @media (max-width: 650px) {

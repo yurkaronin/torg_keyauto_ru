@@ -208,9 +208,10 @@
   }
 
   @media (max-width: 767px) {
-    // &__selected {
-    //   height: 50px;
-    // }
+    &__selected {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
     // &__input {
     //   height: 50px;
     // }
