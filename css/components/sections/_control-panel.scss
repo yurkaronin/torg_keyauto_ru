@@ -19,12 +19,11 @@
   &__content {
     max-width: 100%;
     width: 100%;
-    overflow-x: hidden;
   }
 
   &__table {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   &__aside {
     margin-top: 22px;
@@ -47,6 +46,11 @@
   }
 
   @media (max-width: 900px) {
+    .control-panel__table {
+      max-width: calc(100vw - 25px);
+      overflow: hidden;
+      margin-right: -25px;
+    }
     .data-table {
       overflow: auto;
       max-width: 100%;
@@ -56,21 +60,12 @@
         width: max-content !important;
       }
     }
-    &__content {
-      overflow: initial;
-    }
-
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     &__content .contact-form__buttons {
       grid-template-columns: repeat(1, 1fr);
     }
-    .control-panel__table {
 
-    }
   }
-
-
-
 }
