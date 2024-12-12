@@ -4340,4 +4340,8 @@ input[type=radio].visually-hidden {
 
 .personal-account-form__col--mod label {
   margin-top: 0;
+}
+.personal-account-form__col--mod a {
+  text-decoration: initial;
+  color: initial;
 }/*# sourceMappingURL=style.css.map */
