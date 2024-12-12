@@ -95,3 +95,11 @@
 @media (max-width: 450px) {}
 
 @media (max-width: 374px) {}
+
+
+// ВРЕМЕННЫЕ стили
+.personal-account-form__col--mod {
+  label {
+    margin-top: 0;
+  }
+}
