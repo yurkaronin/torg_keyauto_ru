@@ -2295,6 +2295,7 @@ input[type=radio].visually-hidden {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  word-break: break-all;
 }
 .documents-list__info {
   margin: 0;
