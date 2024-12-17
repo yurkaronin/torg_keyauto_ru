@@ -10,6 +10,10 @@
     padding: 0;
   }
 
+  .main {
+    min-height: initial;
+  }
+
   @media (max-width: 1152px) {
     background-image: none;
   }

@@ -223,7 +223,7 @@
     }
 
     &__photo {
-      height: initial;
+      height: 100px;
       max-width: 100% !important;
       width: 100% !important;
       margin: 0;
@@ -234,7 +234,7 @@
         position: initial;
         object-fit: cover;
         width: 100%;
-        height: auto;
+        height: 100%;
       }
     }
     &__name {

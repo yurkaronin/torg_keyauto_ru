@@ -98,15 +98,17 @@
   &__label {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 16px;
     line-height: 150%;
     color: var(--grey);
     display: block;
     margin-top: 0;
     margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--graphite);
   }
   &__leader {
-    margin-bottom: 21px;
+    margin-bottom: 28px;
   }
 
   &__leader-price {
@@ -117,7 +119,7 @@
     font-size: 32px;
     line-height: 125%;
     color: var(--graphite);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   &__leader-text {
     margin: 0;
@@ -125,6 +127,12 @@
 
   &__contacts-info {
     margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    p {
+      margin-top: 0;
+    }
   }
 
   &__description {
